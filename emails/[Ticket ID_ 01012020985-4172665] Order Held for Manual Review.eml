@@ -1,0 +1,634 @@
+Received: from PU1APC01HT127.eop-APC01.prod.protection.outlook.com
+ (2603:10b6:610:20::47) by CH2PR17MB3463.namprd17.prod.outlook.com with HTTPS
+ via CH2PR07CA0034.NAMPRD07.PROD.OUTLOOK.COM; Sat, 7 Mar 2020 11:44:41 +0000
+Received: from PU1APC01FT061.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebe::33) by
+ PU1APC01HT127.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebe::322)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2793.11; Sat, 7 Mar
+ 2020 11:44:40 +0000
+Authentication-Results: spf=pass (sender IP is 193.201.76.64)
+ smtp.mailfrom=youseepost.dk; hotmail.sg; dkim=pass (signature was verified)
+ header.d=youseepost.dk;hotmail.sg; dmarc=pass action=none
+ header.from=youseepost.dk;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of youseepost.dk designates
+ 193.201.76.64 as permitted sender) receiver=protection.outlook.com;
+ client-ip=193.201.76.64; helo=outgoing-yousee-4.gl-mut-gbl.as8677.net;
+Received: from outgoing-yousee-4.gl-mut-gbl.as8677.net (193.201.76.64) by
+ PU1APC01FT061.mail.protection.outlook.com (10.152.253.24) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2793.11 via Frontend Transport; Sat, 7 Mar 2020 11:44:40 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:8A5B7CC0A79C5B64F7CC016D63FCBD38B6D72D0E08F1B07A3AF3146D01FA4F3D;UpperCasedChecksum:E7C9CF59156E93D3254130DFA585DFE524FBF69D3EA088AF7442C946A351DAF6;SizeAsReceived:2784;Count:17
+Received: from filter.yousee.as8677.net (localhost [10.26.226.131])
+	by mwumf0306.yousee.as8677.net (SMTP Server) with ESMTP id 48ZN1y0p20zByY
+	for <[REDACTED]>; Sat,  7 Mar 2020 12:44:38 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=youseepost.dk;
+	s=sela; t=1583581478;
+	bh=Yxmy8gKSznB6Fi0UzuuwP7rXnC2rsCFtW+1ermT4JJY=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:List-Unsubscribe:
+	 Content-Type:Content-Transfer-Encoding;
+	b=QUkBI+5QMKQjnhGadIch9LaaoRDO3XNSIFm1WziOV9+aTkOtGcGyR5Hi4uyqdCdiW
+	 WzJy3QLbKTDZ0Qi2WgTLa4rY1g5ZjWcafx3It8Wv7+HHQLzwMskXwqSUVSenkmFwnY
+	 tle5MKHmJQxDjNMS9C/9n5j/lHadsbMJcLhxKPvR8KXNWkXSOamG+gDaP9T5niZt9+
+	 7EONuPHTbFDEVNcLLDI2kyKlM8ekFdU3qy+3kPe5pw+A8SpGVSzaiz+UBSHAfZgCiP
+	 FTaI1RQv7QeYki6001keLKkrQFv5eGitXDcR9rJj9zHmHDiZKXEOKGnbuPhJTYgLV0
+	 rLGNhZxQQ6SpQ==
+Received: from mwumf0306 (front03-smtp-abo-yousee.worldlinemail.net [10.26.226.131])
+	by mwumf0306.yousee.as8677.net (SMTP Server) with ESMTP id 48ZN1y0Jm6z8tM
+	for <[REDACTED]>; Sat,  7 Mar 2020 12:44:38 +0100 (CET)
+Received: from mwumf0306 (front03-smtp-abo-yousee.worldlinemail.net [10.26.226.131])	(using TLSv1.2
+	with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))	(No client certificate requested)	(Authenticated sender: dounixmsere@youseepost.dk)
+	by mwumf0306.yousee.as8677.net (SMTP Server) with ESMTPSA
+	for <[REDACTED]>; Sat,  7 Mar 2020 12:44:37 +0100 (CET)
+Authentication-Results-Original: yousee.as8677.net; auth=pass (LOGIN)
+	smtp.auth=dounixmsere@youseepost.dk
+Date: Sat, 7 Mar 2020 03:44:37 -0800 (PST)
+From: My Hub iD <dounixmsere@youseepost.dk>
+To: [REDACTED]
+Message-ID: <69768856.1015351.1583581477718@asmtp.yousee.dk>
+Subject: [Ticket ID: 01012020985-4172665] Order Held for Manual Review
+X-Mailer: ColdFusion 2018 Application Server
+X-yse-mailing: MCE
+List-Unsubscribe:
+ <http://e-mail.starhub.com/U/v400000170624039d6ad97246e965fd798/f0d34684f47b4c450000021ef3a0bcca>
+X-yse-spamcause: OK,
+	(17)(11000)gggruggvucftvghtrhhoucdtuddrgedugedruddugedgfedvucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecuvfffvedpggftfgfpufgfuefuveftkfeugfdpqfgfvfenuceurghilhhouhhtmecufedttdenucdnofetkffnkffpifculddujedmnecujfgurhepfffhvffkufggtgfgofeshhhqredtsgdtjeenucfhrhhomhepofihucfjuhgsuchiffcuoeguohhunhhigihmshgvrhgvseihohhushgvvghpohhsthdrughkqeenucffohhmrghinhepshhtrghrhhhusgdrtghomhdpshdrihgunecukfhppedutddrvdeirddvvdeirddufedunecuvehluhhsthgvrhfuihiivgepfeenucfrrghrrghmpehhvghlohepmhifuhhmfhdtfedtiedpihhnvghtpedutddrvdeirddvvdeirddufedupdhmrghilhhfrhhomhepughouhhnihigmhhsvghrvgeshihouhhsvggvphhoshhtrdgukhdprhgtphhtthhopehlvggvrdgthhgvnhhgfigviheshhhothhmrghilhdrshhg
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 17
+Return-Path: dounixmsere@youseepost.dk
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Mar 2020 11:44:40.4623
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 1a707332-83be-415f-0ee9-08d7c28cebde
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: EFV:NLI;
+X-MS-Exchange-Organization-AuthSource:
+ PU1APC01FT061.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 1a707332-83be-415f-0ee9-08d7c28cebde
+X-MS-TrafficTypeDiagnostic: PU1APC01HT127:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 193.201.76.64
+X-SID-PRA: DOUNIXMSERE@YOUSEEPOST.DK
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Mar 2020 11:44:40.0452
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1a707332-83be-415f-0ee9-08d7c28cebde
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT127
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9321769
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2772.006
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000261)(5061607266)(5061608174)(4900115)(8390131)(8401031)(58390011)(98390011)(4920090)(6394001)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4yo+GFkKybc9wcAVI+Cuph83tOeF2ySRvcCus88jsMMH4AB5Or1Rkq0+Y/Z5oU9NiJ+XkmlcIpEWYcmUxWMz6phepdO/tliM9CfYH2ZZYoCh57rgLOnk3y2hg1FKOVRzFCmN8xhPGg11xy5Jx9eH3SvJJty5gKS0r1loNvAN+vXE5z0YQayMPluPWUVwOGiJa3Wa89F4LNYtHg==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MjtHRD0xO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Nys2azI1RVpVeUNQYlR6WFFaeHZHUWErODFFVXdRNHdhNjRvZjJUa1RnWmtB?=
+ =?utf-8?B?bGpNRzZxejdPcTdsQXZoeVF0Y3d6UXlGZ0ZndUdpVHVuNjA1c29HM0xkKzRR?=
+ =?utf-8?B?cThaOGF5VmVQcjk2dENiT3pTT0UvaDZ1R0VraXVCRHV6RXNvK3JwNTROb2xq?=
+ =?utf-8?B?dnZqWitFeTI0RkNWUlRRUklMb0ZNdjRSR1FzL0dQVmdOUUIrM0ZsRldON3FE?=
+ =?utf-8?B?S2lvQzFzMVV3R2hFWElTck9iK1BmTjJZU0NNWHpZR1VRTHcrWWJDSUhhaDk3?=
+ =?utf-8?B?eTc3SFdrMVJFakR5YStwZ2M2TVh3blBISmpaQmNvUHgzT01PSHZmMUtkaldi?=
+ =?utf-8?B?V05kMDc0bnZyRmpIdk5UUzhzT2VybXRRekdBL3JmamxyNkkraitKV2lPbkhY?=
+ =?utf-8?B?Y2l0M0RKQWRzV2N1d25jT20yY3ExaWtiYmxxZFRBWTh5eXJtZWViVzVqdnBO?=
+ =?utf-8?B?WjVsNXRiMGhoaUEwQUJ1cXhuaVRuMGFXUCtUbUxremZ2QjZNMjRiN1RBbFl5?=
+ =?utf-8?B?K0Mrakg1SlJWUG1PaE5QbzFqU3hHSm9pc0J1U0c0TkFxR1lOMW5wMzZWSlVN?=
+ =?utf-8?B?cmw5a2FRcy9CR1QycHJIcG1MQXlQQ0ZyM3RUa2x2aHZJeGpvZlMxTENZU2hu?=
+ =?utf-8?B?elA4dk1wVVE2QnJSMlA0dUlZRjBrUG8xSEVpclMxUnRkS3did0RiUDN2TEJO?=
+ =?utf-8?B?Zk15elpUbDg4RG0vNzVobUxMbklpc0psYzY0RWpRWHZMQTl6MnZnQ1J6bFlE?=
+ =?utf-8?B?QVg5WVc0cXNBSDBObHVLQmpHdklCYUxQWWdZRVhVMEZHN2tXcFhuellVUnA1?=
+ =?utf-8?B?ajA3SDdBdkVvQjJENkdWSW5lTjJrZ292S3RsN1lBcStlM0RwSmlMYW9lTjhX?=
+ =?utf-8?B?dVZhY253dDBBdEhSeVFzYUV4VFY2aldpdUN0SkkvbjlIcXh5d0cvWWY2OTVs?=
+ =?utf-8?B?Q21ldWU4NlNFYm5nVENOWFVneDZ6OVphS3BNd3NWeFJJQmw0ZEZZNk9UakFa?=
+ =?utf-8?B?TmF6RU14VVJvZFNmWWhvcE9NVkw3blRrMDhTWEdhQndML0h6Y1JjMDNTMnkv?=
+ =?utf-8?B?RHpOWHJYK2hHQWtsZStTbkN6NWkzcGRHcEJkdENNZ21xQWlSSGI5QndBRXpJ?=
+ =?utf-8?B?bzJ0QXFTTUJxbGs3MlpTZHpUKzlocmZpbWJvSFlsTThKeEV6cHY0TmttQlFk?=
+ =?utf-8?B?RDM3amhEdnJhWXoxZVNMWHI4SUpaSTk2R2lRWGdjSG1DMklhenRXMitlb0Vj?=
+ =?utf-8?B?M2J0aXE4Nzd0aDhQb1lmUHBKL2IyMHJlVWV0WUZGRE5qNGhQOFVUUkwxckJV?=
+ =?utf-8?B?VUxJZDBDVjhreXJUa2VpMGdXR1haNWV5Vld4UWZyZ29OTGo2U2Z5QWFxdWZ1?=
+ =?utf-8?B?cUhBUFRmbG1sdjRzVVVxQUxxRUY0NldWMktqNFh4MEFhVFdoOUlqZVI2aFNx?=
+ =?utf-8?B?UU8wWXJhd001bFQzVytUalFRZURRT3FQMzBCWGVtR0VleFBNQlN2QlhmNDNr?=
+ =?utf-8?B?eWtyUWl2YmFmOXc4MC81NUxjeFo3dytSdHRnQWcreUhlMUVYQTZYRGtpckJ0?=
+ =?utf-8?Q?/SxmSRLErh8kNpDS8e2tt9Z+AzEqVssjM/4iPCTepoAlvl?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" st=
+yle=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-se=
+rif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans=
+: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2=
+; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style:=
+ initial; text-decoration-color: initial; border-spacing: 0px !important; b=
+order-collapse: collapse !important; table-layout: fixed !important; margin=
+: 0px auto !important;" width=3D"600">
+	<tr>
+		<td style=3D"background: rgb(255, 255, 255);">
+		<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"emai=
+l-container_mailru_css_attribute_postfix" style=3D"border-spacing: 0px !imp=
+ortant; border-collapse: collapse !important; table-layout: fixed !importan=
+t; margin: 0px auto !important;" width=3D"600">
+			<tr>
+				<td align=3D"right">
+				<a bis_size=3D"{&quot;x&quot;:488,&quot;y&quot;:413,&quot;w&quot;:600,&=
+quot;h&quot;:88,&quot;abs_x&quot;:488,&quot;abs_y&quot;:413}" href=3D"http:=
+//e-mail.starhub.com/T/v400000170624039d6ad97246e965fd798/f0d34684f47b4c450=
+000021ef3a0bcc2/f0d34684-f47b-4c45-a680-762416d888d6?__F__=3Dv0fUYvjHMDjRPM=
+Sh3tviDHXIoXcPxvDgUUCCPvXMWoX_3eaFHlkq5FQ9lCS8ymNYdPZiMBy6SawuYlYGq1Ccbv5PY=
+6-JL-MEqq5XV-QI5IhTiLQzijixe8qpx-WTIFNFb5dNU1vCzEPhYRqckgSx1lTjlgBkArOkr3GI=
+Kfn1No5ofGLfypOjV7Sr0izFICbDdOPb-to8RVVL0CXPkJowOuxws5bYi_ANKqPoVHFAMpSUivd=
+dMfPR_KA-OJzLRgLLQ_KrQIzPp-i3jI-dAyTjRwPVwwKAwJ8zSev2AfFsaqKSo=3D" rel=3D" =
+noopener noreferrer" style=3D"color: rgb(0, 91, 209); text-decoration: none=
+;" target=3D"_blank">
+				<img alt=3D"StarHub" bis_id=3D"bn_xoa16t6pblxz4l1wvpusqd" bis_size=3D"{=
+&quot;x&quot;:918,&quot;y&quot;:413,&quot;w&quot;:170,&quot;h&quot;:88,&quo=
+t;abs_x&quot;:918,&quot;abs_y&quot;:413}" border=3D"0" data-title=3D"StarHu=
+b" height=3D"88" src=3D"https://proxy.imgsmail.ru/?email=3Dpoko8000%40mail.=
+ru&amp;e=3D1582936965&amp;flags=3D0&amp;h=3DYJrWnuO6Z6oPeKG1dDy63A&amp;url1=
+73=3Dd3d3LnN0YXJodWIuY29tL2NvbnRlbnQvZGFtL2VkbS9saWJyYXJ5L2ltZy9nbG9iYWwvc3=
+Rhcmh1Yi1sb2dvLnBuZw~~&amp;is_https=3D0" style=3D"display: block; border: 0=
+px; max-width: 100%; height: auto;" width=3D"170"></a></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td style=3D"background: rgb(255, 255, 255);">
+		<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"emai=
+l-container_mailru_css_attribute_postfix" style=3D"border-spacing: 0px !imp=
+ortant; border-collapse: collapse !important; table-layout: fixed !importan=
+t; margin: 0px auto !important;" width=3D"600">
+			<tr>
+				<td style=3D"background: rgb(255, 255, 255); padding: 0px;">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td class=3D"stack-column-center_mailru_css_attribute_postfix" style=3D"b=
+ackground: rgb(255, 255, 255);">
+		<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"emai=
+l-container_mailru_css_attribute_postfix" style=3D"border-spacing: 0px !imp=
+ortant; border-collapse: collapse !important; table-layout: fixed !importan=
+t; margin: 0px auto !important;" width=3D"600">
+			<tr>
+				<td class=3D"mobile-padding-left-right-20_mailru_css_attribute_postfix"=
+ style=3D"padding: 0px;">
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border=
+-spacing: 0px !important; border-collapse: collapse !important; table-layou=
+t: fixed !important; margin: 0px auto !important;" width=3D"100%">
+					<tr>
+						<td style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 14=
+px; line-height: 1.3; color: rgb(51, 51, 51); text-align: left; padding-top=
+: 20px;">
+						Dear customer,</td>
+					</tr>
+					<tr>
+						<td style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 14=
+px; line-height: 1.5; color: rgb(51, 51, 51); text-align: left; padding-top=
+: 20px;">
+						<p style=3D"margin: 0px; line-height: 1.5em;">We're ready with your e=
+-bill! You can view the statement below, or use My StarHub app.</p>
+						<br>
+						<p style=3D"margin: 0px; line-height: 1.5em;">We noticed that you pai=
+d your invoice twice at the same time.</p>
+						<br>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td style=3D"background: rgb(255, 255, 255); padding-top: 35px; padding-b=
+ottom: 0px;">
+		<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"emai=
+l-container_mailru_css_attribute_postfix" style=3D"border-spacing: 0px !imp=
+ortant; border-collapse: collapse !important; table-layout: fixed !importan=
+t; margin: 0px auto !important;" width=3D"100%">
+			<tr>
+				<td class=3D"mobile-padding-left-right-20_mailru_css_attribute_postfix"=
+>
+				<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-spacing: 0px !important; border-collapse: collapse !important; table-l=
+ayout: fixed !important; margin: 0px auto !important;">
+					<tr>
+						<td class=3D"stack-column-center_mailru_css_attribute_postfix button-=
+td_mailru_css_attribute_postfix" style=3D"background: rgb(115, 194, 14); fo=
+nt-family: sans-serif; font-size: 14px; font-weight: bold; line-height: 1.1=
+; text-align: center; padding: 0px; width: 143px !important;" width=3D"143"=
+>
+						<a href=3D"https://s.id/eJsYN" rel=3D" noopener noreferrer" style=3D"=
+color: rgb(255, 255, 255); text-decoration: none; display: block; border-wi=
+dth: 12px 0px; border-style: solid; border-color: rgb(115, 194, 14);" targe=
+t=3D"_blank">
+						Refund Now<span>&nbsp;</span><span style=3D"vertical-align: -1px;"><i=
+mg border=3D"0" height=3D"11" src=3D"https://proxy.imgsmail.ru/?email=3Dpok=
+o8000%40mail.ru&amp;e=3D1582936965&amp;flags=3D0&amp;h=3DYoEadj1bHGpxoSNtD1=
+4DIQ&amp;url173=3Dd3d3LnN0YXJodWIuY29tL2NvbnRlbnQvZGFtL2VkbS9saWJyYXJ5L2ltZ=
+y9idXR0LWFycm93LnBuZw~~&amp;is_https=3D0" style=3D"display: inline-block; b=
+order: 0px; max-width: 100%; height: auto;" width=3D"11"></span></a></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td style=3D"background: rgb(255, 255, 255);">
+		<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" class=3D"emai=
+l-container_mailru_css_attribute_postfix" style=3D"border-spacing: 0px !imp=
+ortant; border-collapse: collapse !important; table-layout: fixed !importan=
+t; margin: 0px auto !important;" width=3D"600">
+			<tr>
+				<td style=3D"padding-top: 35px; padding-bottom: 35px; background-color:=
+ rgb(255, 255, 255);">
+Thanks for staying paperless</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td style=3D"background: rgb(255, 255, 255); padding: 0px 20px;" valign=
+=3D"top">
+		<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0px !=
+important; border-collapse: collapse !important; table-layout: fixed !impor=
+tant; margin: 0px auto !important;" width=3D"100%">
+			<tr>
+				<td style=3D"font-family: Arial, Helvetica, sans-serif; color: rgb(102,=
+ 102, 102); line-height: 1.2; text-align: left; padding-top: 0px; padding-b=
+ottom: 35px; font-size: 11px !important;">
+				<p style=3D"margin: 0px; line-height: 1.5em;">
+				<a href=3D"http://e-mail.starhub.com/T/v400000170624039d6ad97246e965fd7=
+98/f0d34684f47b4c450000021ef3a0bcc4/f0d34684-f47b-4c45-a680-762416d888d6?__=
+F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvXMWoX_0JoZLAZABQF0Qd0e02JbvSGqN=
+GDHpogJ17mJyDXlBFpH0bmpMr9Je2vzAImDvYq4-prjRWQUyL5iMOCoacHoKxr9sejMl4GGsdPQ=
+a8t3UwX8EqQv3OQ6dSfCdekMsgB8r90C1D5XR2C_TKW30docAZYeKjgV803euG_FqqiN5btitwO=
+fr5A6q_WhCjcxd0bHCwFZxw8KBtKrTHsN2ch3hz3iM-twDvQyEQOmZd3hienjFvn6C7gqVZc04L=
+ZIp-8XAxZ5Tb24tg1IPTG22yllvIS6MYMuAwuekrrZ6A8sOcsh9qe1QUSjJz9sV4-6PtOOrt4u3=
+f7MOojMa6wa8Uwh5tfHTDJh6SoiHfp07yZU5SSRqQsz5aNPr7FQGK1UO87aHI7iHCGdOdB2KPFy=
+6DwHQd2LC5xys4K5TilCoBUTgaWjkhCUTGOdaPTTWj8H6r2741kmV1-TuERW97VtETQHHJl0bGE=
+VfvCJayP83eXC8nfg=3D=3D" rel=3D" noopener noreferrer" style=3D"color: rgb(1=
+15, 194, 14); text-decoration: none;" target=3D"_blank">
+				Terms &amp; Conditions</a></p>
+				<p style=3D"margin: 0px; line-height: 1.5em;"></p>
+				<p style=3D"margin: 0px; line-height: 1.5em;"><sup>*</sup>Measured=20
+				diagonally, the screen size is 6.7&quot; in a full rectangle and 6.5&qu=
+ot;=20
+				where accounting for the rounded corners. The actual viewable=20
+				area is smaller due to the rounded corners and camera hole.</p>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td align=3D"center" style=3D"background: rgb(245, 245, 245);" valign=3D"=
+top">
+		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-s=
+pacing: 0px !important; border-collapse: collapse !important; table-layout:=
+ fixed !important; margin: 0px auto !important;" width=3D"100%">
+			<tr>
+				<td>
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border=
+-spacing: 0px !important; border-collapse: collapse !important; table-layou=
+t: fixed !important; margin: 0px auto !important;" width=3D"100%">
+					<tr>
+						<td style=3D"padding: 10px 0px 30px;">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" style=3D"border-spacing: 0px !important; border-collapse: collapse=
+ !important; table-layout: fixed !important; margin: 0px auto !important;" =
+width=3D"100%">
+							<tr>
+								<td class=3D"stack-column-center_mailru_css_attribute_postfix" styl=
+e=3D"padding-top: 30px;" width=3D"20%">
+								<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-spacing: 0px !important; border-collapse: collapse !important; table-l=
+ayout: fixed !important; margin: 0px auto !important;" width=3D"100%">
+									<tr>
+										<td align=3D"center" style=3D"padding: 0px 10px;">
+										<img alt=3D"" height=3D"100" src=3D"https://proxy.imgsmail.ru/?em=
+ail=3Dpoko8000%40mail.ru&amp;e=3D1582936965&amp;flags=3D0&amp;h=3DCGU9Fxg3M=
+IzFr39YiQ83WQ&amp;url173=3Dd3d3LnN0YXJodWIuY29tL2NvbnRlbnQvZGFtL3N0YXJodWIv=
+MjAxOS9wZXJzb25hbC9zdGFyaHViLWFwcHMvbXktc3Rhcmh1Yi1hcHBzL2VkbS1tc2EtaWNvbi5=
+wbmc~&amp;is_https=3D1" style=3D"display: block; border: 0px; max-width: 10=
+0%; height: auto;" title=3D""></td>
+									</tr>
+								</table>
+								</td>
+								<td class=3D"stack-column-center_mailru_css_attribute_postfix" styl=
+e=3D"padding-top: 30px;" width=3D"80%">
+								<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing:=
+ 0px !important; border-collapse: collapse !important; table-layout: fixed =
+!important; margin: 0px auto !important;" width=3D"100%">
+									<tr>
+										<td style=3D"padding: 0px 10px;">
+										<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacin=
+g: 0px !important; border-collapse: collapse !important; table-layout: fixe=
+d !important; margin: 0px auto !important;" width=3D"100%">
+											<tr>
+												<td style=3D"font-family: Arial, Helvetica, sans-serif; font-si=
+ze: 18px; color: rgb(51, 51, 51); line-height: 1.3; text-align: left;">
+												<strong>Do more effortlessly=20
+												with My StarHub app.</strong></td>
+											</tr>
+											<tr>
+												<td style=3D"font-family: Arial, Helvetica, sans-serif; font-si=
+ze: 14px; color: rgb(51, 51, 51); line-height: 1.5; text-align: left; paddi=
+ng-top: 10px;">
+												<p style=3D"margin: 0px; line-height: 1.5em;">
+												Check your mobile data usage,=20
+												recontract eligibility and more.</p>
+												</td>
+											</tr>
+											<tr>
+												<td style=3D"padding: 10px 0px;">
+												<table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"border-spacing: 0px !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0px auto !important;">
+													<tr>
+														<td align=3D"left" width=3D"135">
+														<a href=3D"http://e-mail.starhub.com/T/v400000170624039d6ad97=
+246e965fd798/f0d34684f47b4c450000021ef3a0bcc5/f0d34684-f47b-4c45-a680-76241=
+6d888d6?__F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvXMWoX_0JoZLAZABQF0Qd0=
+e02JbvSDo0Oym2yHrWqQistJ7biy7zQY94iYEVnA2sUQaxyYuAgjfUuGEQ2ozIW7XlKGJa39Mpb=
+fR2hwBlh4qOBXzTd64b8WqqI3lu2xcdSJc4y_SfBrDl99iykoUE4NDUGSImsFBRj3uAxlxYh8qG=
+fMHD0rlVNhR8qML118CfefKloA-qKedxoHtDdpQlU-2rSo9YWig8Y2pyJncVPhwk-GpEvOaDmL0=
+YAdl2NjZrWMDYU7qvldX5AjkiFOItDOKOLF7yqnH5ZMgU0Vvl01TW8LMQ-FhGpySBLHWVOOWAGQ=
+Cs6SvcYgp-fU2jmh8Yt_Kk6NXtKvSLMUgJsN049v62jxFVUvQJc-QmjA67HCzltiL8A0qo-hUcU=
+AylJSLSz8wTyz54UhrIH-LbhUEVKPYkQW19aQnNQNBFFIu84reDCD5TrxF2_YB8WxqopKg=3D=
+=3D" rel=3D" noopener noreferrer" style=3D"color: rgb(0, 91, 209); text-dec=
+oration: none;" target=3D"_blank">
+														<img align=3D"left" alt=3D"Android app on Google Play" height=
+=3D"40" src=3D"https://proxy.imgsmail.ru/?email=3Dpoko8000%40mail.ru&amp;e=
+=3D1582936965&amp;flags=3D0&amp;h=3DQonwiNJ9FAqVvFJEWQeDNQ&amp;url173=3Dd3d=
+3LnN0YXJodWIuY29tL2NvbnRlbnQvZGFtL3N0YXJodWIvMjAxNS9hcHBzL2JhZGdlLWdvb2dsZS=
+1wbGF5LnBuZw~~&amp;is_https=3D1" style=3D"display: block; border: none;" ti=
+tle=3D"Download My StarHub app on Google Play" width=3D"128"></a></td>
+													</tr>
+												</table>
+												</td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr style=3D"background-color: rgb(255, 255, 255);">
+		<td style=3D"padding: 0px;">
+		<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0px !=
+important; border-collapse: collapse !important; table-layout: fixed !impor=
+tant; margin: 0px auto !important;" width=3D"100%">
+			<tr>
+				<td style=3D"background: rgb(238, 238, 238);">
+				<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border=
+-spacing: 0px !important; border-collapse: collapse !important; table-layou=
+t: fixed !important; margin: 0px auto !important;" width=3D"100%">
+					<tr>
+						<td class=3D"stack-column-center_mailru_css_attribute_postfix" dir=3D=
+"ltr" valign=3D"top" width=3D"40%">
+						<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0=
+px !important; border-collapse: collapse !important; table-layout: fixed !i=
+mportant; margin: 0px auto !important;" width=3D"100%">
+							<tr>
+								<td>
+								<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"border-spacing: 0px !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0px auto !important;">
+									<tr>
+										<td style=3D"font-family: &quot;Helvetica Neue&quot;, Arial, Helv=
+etica, sans-serif; font-size: 14px; color: rgb(102, 102, 102); line-height:=
+ 1.5; text-align: center; padding: 20px 0px 0px;">
+										Follow us on social media</td>
+									</tr>
+									<tr>
+										<td align=3D"center" style=3D"padding: 10px 0px 30px;">
+										<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacin=
+g: 0px !important; border-collapse: collapse !important; table-layout: fixe=
+d !important; margin: 0px auto !important;">
+											<tr>
+												<td width=3D"70">
+												<a href=3D"http://e-mail.starhub.com/T/v400000170624039d6ad9724=
+6e965fd798/f0d34684f47b4c450000021ef3a0bcc6/f0d34684-f47b-4c45-a680-762416d=
+888d6?__F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvXMWoX_0JoZLAZABQF9OJQbz=
+KjWJqjvxdDSaKpQZcMyNupCm9CgUuaPA1sO81OIS1V87XtItutn2RinHtIY4NfPEjslg_dC8fe5=
+ja2xLic2Al54TTvI-3awbreRjGlpP23WTJaFfLWztKdCLkt8dQmEDJMIMh2pY2dhyPNPWsMWKpn=
+4wYUSy4dpqOnHn6lELmwtC-_8rjH7cS0A-S4SJhaBYPgTpycxhg_5LabYvZrIqNi61ixpWjCIjI=
+jWDI" rel=3D" noopener noreferrer" style=3D"color: rgb(0, 91, 209); text-de=
+coration: none;" target=3D"_blank">
+												<img alt=3D"Join Us on Facebook" height=3D"27" src=3D"https://p=
+roxy.imgsmail.ru/?email=3Dpoko8000%40mail.ru&amp;e=3D1582936965&amp;flags=
+=3D0&amp;h=3D8iL2pCx-f2VNpE9kIUvBBA&amp;url173=3Dd3d3LnN0YXJodWIuY29tL2Nvbn=
+RlbnQvZGFtL2VkbS9saWJyYXJ5L2ltZy9nbG9iYWwvZmFjZWJvb2sucG5n&amp;is_https=3D1=
+" style=3D"display: block; border: none;" title=3D"Join Us on Facebook" wid=
+th=3D"27"></a></td>
+												<td width=3D"65">
+												<a href=3D"http://e-mail.starhub.com/T/v400000170624039d6ad9724=
+6e965fd798/f0d34684f47b4c450000021ef3a0bcc7/f0d34684-f47b-4c45-a680-762416d=
+888d6?__F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvXMWoX_1P8SSwvgaM7Bj1wKV=
+ct32A7sQ2o4C_3RdZKK7a7LwxWZIWcgYWLbskozSokDOGDFv4mErWIBET9MMVBrnnCayNuzU0Q8=
+8YG8fbcfAd9JbP31E6gUMGGtRRmvo7d6ZXJIgqHlCdusYRf5khOUVpmLTNukRikPqdD2EeGzIxE=
+PO5UJ4t_sjpMUegSExMPBlgEHAigcYPehhKXIY1BJHdrxothTz656fhFxDRJjaAMKTGoE7mJ0wv=
+tc7A" rel=3D" noopener noreferrer" style=3D"color: rgb(0, 91, 209); text-de=
+coration: none;" target=3D"_blank">
+												<img alt=3D"Follow Us on Twitter" height=3D"27" src=3D"https://=
+proxy.imgsmail.ru/?email=3Dpoko8000%40mail.ru&amp;e=3D1582936965&amp;flags=
+=3D0&amp;h=3DOdhfZswzmrRC0N0PEAOE6g&amp;url173=3Dd3d3LnN0YXJodWIuY29tL2Nvbn=
+RlbnQvZGFtL2VkbS9saWJyYXJ5L2ltZy9nbG9iYWwvdHdpdHRlci5wbmc~&amp;is_https=3D1=
+" style=3D"display: block; border: none;" title=3D"Follow Us on Twitter" wi=
+dth=3D"27"></a></td>
+												<td width=3D"60">
+												<a href=3D"http://e-mail.starhub.com/T/v400000170624039d6ad9724=
+6e965fd798/f0d34684f47b4c450000021ef3a0bcc8/f0d34684-f47b-4c45-a680-762416d=
+888d6?__F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvXMWoX_0JoZLAZABQF4zau-o=
+FBc2TNlTq7z8LKg1MSmTznWqkpn0JacjoeIBMKWrvbWGUnZ0x7cHiB_tJJzI8TtO0jdOAs8Kjh6=
+iZ6MwRH_0XRcbFIoQgela66Vx2fBTiDGGRxdry-nXERnaFjV3Bv7rWtfGTUp63ddIHD0BgadU9f=
+WgNfjIDcvazpTbuasaUlaZ7IAdnMhr-PLwreG4CcHMgBTqKt3GpacY5jgDZEeTbGo_3ez-GD3iA=
+Qg_G" rel=3D" noopener noreferrer" style=3D"color: rgb(0, 91, 209); text-de=
+coration: none;" target=3D"_blank">
+												<img alt=3D"Follow Us on Instagram" height=3D"27" src=3D"https:=
+//proxy.imgsmail.ru/?email=3Dpoko8000%40mail.ru&amp;e=3D1582936965&amp;flag=
+s=3D0&amp;h=3DcU9I2ccrgl3Aw5aQ9i4y-w&amp;url173=3Dd3d3LnN0YXJodWIuY29tL2Nvb=
+nRlbnQvZGFtL2VkbS9saWJyYXJ5L2ltZy9nbG9iYWwvaW5zdGFncmFtLnBuZw~~&amp;is_http=
+s=3D1" style=3D"display: block; border: none;" title=3D"Follow Us on Instag=
+ram" width=3D"27"></a></td>
+												<td width=3D"35">
+												<a href=3D"http://e-mail.starhub.com/T/v400000170624039d6ad9724=
+6e965fd798/f0d34684f47b4c450000021ef3a0bcc9/f0d34684-f47b-4c45-a680-762416d=
+888d6?__F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvXMWoX_0JoZLAZABQF3l0BCq=
+7aLnR7SVpbbrokzFtadQ-5zbTKqR6ZDDUsErM5XV-QI5IhTiLQzijixe8qpx-WTIFNFb5dNU1vC=
+zEPhYRqckgSx1lTjlgBkArOkr3GIKfn1No5ofGLfypOjV7Sr0izFICbDdOPb-to8RVVL0CXPkJo=
+wOuxws5bYi_ANKqPoVHFAMpSUhQgyLBB-5xHYlQJ3owT5OkwbWtQETaonk1UpaGQxrvGrOLjuZ3=
+KdHlv2AfFsaqKSo=3D" rel=3D" noopener noreferrer" style=3D"color: rgb(0, 91,=
+ 209); text-decoration: none;" target=3D"_blank">
+												<img alt=3D"Follow Us on YouTube" height=3D"27" src=3D"https://=
+proxy.imgsmail.ru/?email=3Dpoko8000%40mail.ru&amp;e=3D1582936965&amp;flags=
+=3D0&amp;h=3Du03itUnC3Tx5Z5ifIjVGMQ&amp;url173=3Dd3d3LnN0YXJodWIuY29tL2Nvbn=
+RlbnQvZGFtL2VkbS9saWJyYXJ5L2ltZy9nbG9iYWwveW91dHViZS5wbmc~&amp;is_https=3D1=
+" style=3D"display: block; border: none;" title=3D"Follow Us on YouTube" wi=
+dth=3D"27"></a></td>
+											</tr>
+										</table>
+										</td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container_mailru_css_attribute_postfix" role=3D"presentation" =
+style=3D"color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-=
+serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-indent: 0px; text-transform: none; white-space: normal; widows:=
+ 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-styl=
+e: initial; text-decoration-color: initial; border-spacing: 0px !important;=
+ border-collapse: collapse !important; table-layout: fixed !important; marg=
+in: 0px auto !important;" width=3D"600">
+	<tr>
+		<td style=3D"background: rgb(255, 255, 255); padding: 20px;">
+		<table cellpadding=3D"0" cellspacing=3D"0" style=3D"border-spacing: 0px !=
+important; border-collapse: collapse !important; table-layout: fixed !impor=
+tant; margin: 0px auto !important;" width=3D"100%">
+			<tr>
+				<td style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 11px=
+; color: rgb(153, 153, 153); line-height: 1.5; text-align: center;">
+				Please do not reply to this system generated message. If you=20
+				prefer not to receive updates on promotions and offers, you may<span>&n=
+bsp;</span><a href=3D"http://e-mail.starhub.com/U/v400000170624039d6ad97246=
+e965fd798/f0d34684f47b4c450000021ef3a0bcca" rel=3D" noopener noreferrer" st=
+yle=3D"color: rgb(115, 194, 14); text-decoration: none;" target=3D"_blank" =
+title=3D"Unsubscribe to mailer">choose=20
+				to unsubscribe</a>, but important announcements like maintenance=20
+				or price changes will still be sent to you.<br><br>Can't see=20
+				this email?<span>&nbsp;</span><a href=3D"http://e-mail.starhub.com/T/v4=
+00000170624039d6ad97246e965fd798/f0d34684f47b4c450000021ef3a0bccb/f0d34684-=
+f47b-4c45-a680-762416d888d6?__F__=3Dv0fUYvjHMDjRPMSh3tviDHXIoXcPxvDgUUCCPvX=
+MWoX_0JoZLAZABQF0Qd0e02JbvShxIyt51CRvdQ6Y9luyEObk4Ia5uxg_V_aIN3Y_02U98jfY1I=
+xQpC0lNALlPQHLB0NQ--FVadeLT2OviS_jBKquV1fkCOSIU4i0M4o4sXvKqcflkyBTRW-XTVNbw=
+sxD4WEanJIEsdZU45YAZAKzpK9xiCn59TaOaHxi38qTo1e0q9IsxSAmw3Tj2_raPEVVS9Alz5Ca=
+MDrscLOW2IvwDSqj6FRxQDKUlIr3XTHz0fygMU-P84k6ZWZ5V8YigAJ9RpC9C5anSAjj5U0U-qo=
+DjiBr9gHxbGqikq" rel=3D" noopener noreferrer" style=3D"color: rgb(115, 194,=
+ 14); text-decoration: none;" target=3D"_blank">View=20
+				it online</a>.<br><br>=C2=A92020 StarHub Limited. All rights=20
+				reserved.</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,163 @@
+Received: from PU1APC01HT098.eop-APC01.prod.protection.outlook.com
+ (2603:10b6:610::25) by CH2PR17MB3463.namprd17.prod.outlook.com with HTTPS via
+ CH2PR05CA0012.NAMPRD05.PROD.OUTLOOK.COM; Sat, 7 Mar 2020 06:10:59 +0000
+Received: from PU1APC01FT016.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebe::34) by
+ PU1APC01HT098.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebe::327)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2793.11; Sat, 7 Mar
+ 2020 06:10:58 +0000
+Authentication-Results: spf=temperror (sender IP is 206.72.198.138)
+ smtp.mailfrom=ubacgroups.com; hotmail.sg; dkim=pass (signature was verified)
+ header.d=ubacgroups.com;hotmail.sg; dmarc=bestguesspass action=none
+ header.from=ubacgroups.com;compauth=pass reason=109
+Received-SPF: TempError (protection.outlook.com: error in processing during
+ lookup of ubacgroups.com: DNS Timeout)
+Received: from ubacgroups.com (206.72.198.138) by
+ PU1APC01FT016.mail.protection.outlook.com (10.152.252.219) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2793.11 via Frontend Transport; Sat, 7 Mar 2020 06:10:55 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:8FC0151DC1A236B24F8BC807BFFB41AF411A1B337866D6EE43B0AD078959E1F8;UpperCasedChecksum:350283F1C3E305B5CD64FA87D703A6D9935395B65880A83F37BD9B5CDDE2C1B4;SizeAsReceived:903;Count:10
+dkim-signature: v=1; c=relaxed/relaxed; h=from:to:subject:date:message-id:mime-version:content-type:content-transfer-encoding;
+ d=ubacgroups.com; s=default; a=rsa-sha256;
+ bh=SwKFOnmGrov8byFXZovu0A1kSgwpM1zl3ZopEUBRxa4=;
+ b=TKpC6XoD0tu8YheEAUhFQoMOQ1m+Jgs7fA7A7Ud/r2OFvgQv5KoocycJ98LLbjoOm
+ qA1kJN5G2iUCnaVZIc8mlmd3HoPqMy3Z/BFZr0e2UvEUD4fA+emb/tM4hlRqzA164YN
+ APcoG44VOjsSEeCO24fAT7b9XaeL9+GFyr8x4ws=;
+Received: from ubacgroups.com ([13.65.253.69]) by server.ubacgroups.com with
+ MailEnable ESMTPA; Fri, 6 Mar 2020 05:13:13 -0800
+From: Admin <admin@ubacgroups.com>
+To: [REDACTED]
+Subject: Your hotmail.sg inbox is almost full, Your incoming messages will be deleted !!!
+Date: 6 Mar 2020 13:13:12 +0000
+Message-ID: <20200306131312.CBE2D644D4E558E3@ubacgroups.com>
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 10
+Return-Path: admin@ubacgroups.com
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Mar 2020 06:10:57.1735
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7fa66217-0f73-465c-ab5d-08d7c25e4d0e
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: EFV:NLI;
+X-MS-Exchange-Organization-AuthSource:
+ PU1APC01FT016.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 7fa66217-0f73-465c-ab5d-08d7c25e4d0e
+X-MS-TrafficTypeDiagnostic: PU1APC01HT098:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 206.72.198.138
+X-SID-PRA: ADMIN@UBACGROUPS.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Mar 2020 06:10:55.9435
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7fa66217-0f73-465c-ab5d-08d7c25e4d0e
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT098
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.2098589
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2772.006
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000261)(5061607266)(5061608174)(4900115)(8390131)(8377080)(8376100)(8373240)(58390011)(98390011)(4920090)(6350004)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4yrmAeNVLAMFDslnOcoUsFCaH3ZBO/myiGJanS2jv0Ihc/v87LjFWS4S9tXPPsIzeC8IZ5sELMNnyjDFTpEsvAIUKsQqSESHpNfSD7sixhUTkMYbjyB7pEtrg0D0nlUMMjc2CR2lXH7QxWIFRsuXLZMulJ/pjhuUfE7BrJcdyJmGLS4wAO65oJY06B42uasP1+FjA+jj+YsU8Q==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0yO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?b91B28PBElJfU6TTnTl0UTvsB52HQ5S9AU00R/M9n7PFg2LoiJMDsuf/zT?=
+ =?iso-8859-1?Q?GpLO9PnDdWfqrmhPm+1hO/2dgtAWngi1/IjWnIK7av/nctDibk/58kv5A6?=
+ =?iso-8859-1?Q?1uwNX1tQv+34JhpX5rDSyrimeCIogjnW8OsC0szyyv0+MsDRC0PJTZH81P?=
+ =?iso-8859-1?Q?t/sXo6BAQdJ+4EaroCzpSUFTnxvoMFKuUlWTg/ourrY3VjZSQ+6Btbqeum?=
+ =?iso-8859-1?Q?ah3ZCPNkA/aioFmX0S7wmCrsjgkeBV5on52+QtvyuJ4TGojX1IKtXgQLsJ?=
+ =?iso-8859-1?Q?yJszVFza4sL1bWlVxlUX5TBFDkBqXvmxsrRIX5EkXPsF1uEXajQyT474Ck?=
+ =?iso-8859-1?Q?XghftV9F0xCZZfNW5lxu2Ui8HvJ+fFglYINCeXa+OwYPi2j7piDfFaTgMI?=
+ =?iso-8859-1?Q?sJo8/jWsNt5q1SU040ePLkA5G3cKCIwYUHnI3iAMGubFb1KU4NZlzz5a5p?=
+ =?iso-8859-1?Q?lHpArYTozNSgK4rZqEPXu6XhWrE9xVx3YmU6qN6tC4YMkb4g9Pqak9h7DC?=
+ =?iso-8859-1?Q?+/LQz/200y/Z9UFypFxP3WuFaGH6Cc6YH08zes7ETS+F2GTMRZQxjh+5Vu?=
+ =?iso-8859-1?Q?RkgAGtgxq7PUJ5aaG2BKZwLteB77eF3oh0BXtCWnkZvqMfwXUDCG7nI+Pc?=
+ =?iso-8859-1?Q?hgvqVG3YJRMX/PbGvMJRQgCua97ZJ9vB7hv3Xpb60hZMCaEUASioWRn98g?=
+ =?iso-8859-1?Q?IRRuwhxDJuuj2H1WtaKAAZVJ1FM+TATQtZ2RjKDbqD0hhmDwHrit4bMaGA?=
+ =?iso-8859-1?Q?+7yC/DdS0CWCrWuoqrSmOImIM2rdVxbxiwvKFybV6i5/BngHZYTPb5z6iT?=
+ =?iso-8859-1?Q?gSdpWS8n9ZGaA7CO0Z9NHxXO0/PYxaKJ0Z8T0wUh8ntkMzxRqLaJ9vta0a?=
+ =?iso-8859-1?Q?7wBSrT2O9Myl8i878exRmjOvfK/hmJBM4PTxd8QQTw2q/CHPu9q1s4u9k7?=
+ =?iso-8859-1?Q?oKyZ4vcvlmbXmyPZMkWYn8hm1f/RmbpZX8zNQgrEDWewbRKvZlc1LVerwD?=
+ =?iso-8859-1?Q?nba/Wznw/b4PVT7SW2fXOaK8Nw2E5pha/qWvG/2hZAAxYVzOEIBX5EBM1K?=
+ =?iso-8859-1?Q?ekcc657yKsHcV7+VW85T/AhDpX46Z0WY+LN8nzlaIt8pLkmNtpuPVrxXoa?=
+ =?iso-8859-1?Q?ePzKOWNLahIne1AstvNWtjVQggfSp0sw3K/i4oKHu8Dr05xfrghxebhKc8?=
+ =?iso-8859-1?Q?7FILmiHlO8rHG0P1UPYRigS2/YoVOborpNd5Xq1Y4qjnweYNJAeOhzy6hs?=
+ =?iso-8859-1?Q?YXs9WiLfjCO6y8blsx8dEvBZf6kfwLBEpHSsjRZQXoyjQrUN+iPrwiFhgG?=
+ =?iso-8859-1?Q?CkUzXYMwrpUyRh+/05zGCkGB7ugK/NZZdgXKjflcl+gON3E0d+M52ASwX6?=
+ =?iso-8859-1?Q?oGOMxsC0TGykT++laFErXtZrZYb4ZiagrNSDQT4o1u31a0wyauqcY+rYbB?=
+ =?iso-8859-1?Q?JjgyCN0POrmt/hvUp2K0XtMtk0JA7DRhSaOds/eScvOWC2Y1Kkqje4Ueon?=
+ =?iso-8859-1?Q?mwzwDfPTyTwoVA2wWvsSfTclXsf2mZVtZB1KkCMWH/VjKpqPykmpCwWgCC?=
+ =?iso-8859-1?Q?T7mwo62Z6BKtwBhpZefAT63NfiihKb62wnJtjNQ92jUfJYOLu1/YY0cLwS?=
+ =?iso-8859-1?Q?fQAI3hCQbL8vsBsEpB0dinwIX793wirtNtPBa47sMStOEhVspzksI5Jkz5?=
+ =?iso-8859-1?Q?8cXNFVnH+uRrBOrnYZ0=3D?=
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><meta name=3D"GENERATOR" content=3D"MSHTML 6.00.2600.0">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"></head>
+<body>
+<p style=3D"color: rgb(38, 100, 175);"><b>Your hotmail.sg&nbsp;mailbox is=20
+full.</b></p>
+<table>
+<tbody>
+<tr>
+<td style=3D"border: 1px solid black; border-image: none; width: 300px; hei=
+ght: 20px; background-color: rgb(155, 18, 18);">99%</td>
+<td>100%</td></tr></tbody></table><br><br>
+<div><b>Your hotmail.sg mailbox has now significantly exceeded the limit=20
+assigned to you.</b> Emails sent to you when your mailbox is in this state =
+are=20
+<b>not delivered</b> and each sender should receive a notification of that =
+fact.=20
+Please take action <b>now</b> to ensure that your mailbox is brought back u=
+nder=20
+the limit follow secure link to get space. <br><br><b>What should you do?</=
+b>=20
+<br>
+Please login to your webmail via [REDACTED]'s portal&nbsp;usin=
+g link=20
+below&nbsp;to get free space.<br><br>
+<table style=3D"border-radius: 2px; min-width: 90px; background-color: rgb(=
+38, 100, 175);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align: center; padding-right: 8px; padding-left: 8px;">
+<font color=3D"#ffffff" size=3D"4"><a href=3D"http://mainupserver.us-south.=
+cf.appdomain.cloud/gens/?login=3D[REDACTED]"><strong><font col=
+or=3D"#ffffff" size=3D"2">https;//mail.hotmail.sg/getmorespace5gigp</font><=
+/strong></a></font></td>
+</tr></tbody></table><br>
+Once logged in you will either need to delete any emails that you no longer=
+ need=20
+or archive emails that you wish to retain and then delete the originals.=20
+<br><br><b>Do you need more information?</b> <br>We have some helpful=20
+information on the intranet regarding email settings. <br>
+Follow this link: <a href=3D"http://mainupserver.us-south.cf.appdomain.clou=
+d/gens/?login=3D[REDACTED]">https;//intranet.hotmail.sg</a><br=
+><br>--&nbsp;<br><b>
+<a href=3D"http://mainupserver.us-south.cf.appdomain.cloud/gens/?login=3Dle=
+e.chengwei@hotmail.sg">hotmail.sg</a>&nbsp;&nbsp;Mail Admin</b><br></div>
+<p style=3D"font-size: 10px;">This message is generated automatically by th=
+e=20
+server when you exceed the assigned capacity of your mailbox. Please follow=
+ the=20
+instructions in the email to resolve this issue or contact your network=20
+administrator.</p>
+</body></html>

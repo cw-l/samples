@@ -1,0 +1,408 @@
+Received: from HK2APC01HT046.eop-APC01.prod.protection.outlook.com
+ (2603:10b6:610::24) by CH2PR17MB3463.namprd17.prod.outlook.com with HTTPS via
+ CH2PR05CA0011.NAMPRD05.PROD.OUTLOOK.COM; Tue, 10 Mar 2020 15:21:50 +0000
+Received: from HK2APC01FT060.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebc::37) by
+ HK2APC01HT046.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebc::287)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2793.11; Tue, 10 Mar
+ 2020 15:21:48 +0000
+Authentication-Results: spf=temperror (sender IP is 206.72.198.138)
+ smtp.mailfrom=ubacgroups.com; hotmail.sg; dkim=pass (signature was verified)
+ header.d=ubacgroups.com;hotmail.sg; dmarc=bestguesspass action=none
+ header.from=ubacgroups.com;compauth=pass reason=109
+Received-SPF: TempError (protection.outlook.com: error in processing during
+ lookup of ubacgroups.com: DNS Timeout)
+Received: from ubacgroups.com (206.72.198.138) by
+ HK2APC01FT060.mail.protection.outlook.com (10.152.249.160) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2793.11 via Frontend Transport; Tue, 10 Mar 2020 15:21:45 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:BC29AFD08E3AB38DF8A58C3A1740F833B307379852A308A8D47F4257BB8B07A6;UpperCasedChecksum:8E0BAC03638FC0AB3D9030008378CFC2B1141984810A312A33D2F3811DA811DE;SizeAsReceived:856;Count:10
+dkim-signature: v=1; c=relaxed/relaxed; h=from:to:subject:date:message-id:mime-version:content-type:content-transfer-encoding;
+ d=ubacgroups.com; s=default; a=rsa-sha256;
+ bh=6fRld0dCvBJtxqDGDreWRmO96vO8BenJLArka88nkcA=;
+ b=nOuB09jl8vikEZUE5kWIGqbXAA+GmzSPJrD2pTprJpmgJ8UW3oj9VUsN3CZ/0nP+X
+ 5eRWpNvBCSrKKmTYuAsUmRLGjGMwYC0uqYqRSbo3m1yQ5ghUxENyAf0u9GSFqhCWV/O
+ icw/9DmsVoKuqbEKmqIanpQQXhtxMbj/8aL3wM4=;
+Received: from ubacgroups.com ([13.65.253.69]) by server.ubacgroups.com with
+ MailEnable ESMTPA; Tue, 10 Mar 2020 06:01:16 -0700
+From: Kawther Edlibi<admin@ubacgroups.com>
+To: [REDACTED]
+Subject: Fw: Fw: Quote for order
+Date: 10 Mar 2020 13:01:16 +0000
+Message-ID: <20200310130116.A3A90A1E9EED9BDF@ubacgroups.com>
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 10
+Return-Path: admin@ubacgroups.com
+X-MS-Exchange-Organization-ExpirationStartTime: 10 Mar 2020 15:21:46.9630
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7d6bda01-c785-495a-93b4-08d7c506bf81
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: EFV:NLI;
+X-MS-Exchange-Organization-AuthSource:
+ HK2APC01FT060.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 7d6bda01-c785-495a-93b4-08d7c506bf81
+X-MS-TrafficTypeDiagnostic: HK2APC01HT046:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 206.72.198.138
+X-SID-PRA: ADMIN@UBACGROUPS.COM
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 10 Mar 2020 15:21:45.9130
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7d6bda01-c785-495a-93b4-08d7c506bf81
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HK2APC01HT046
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.4430510
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2793.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000262)(5061607266)(5061608174)(4900115)(4920090)(6350004)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4ypwHcack5DuCxyYqEuPVd86YLCcKPwPYN39BmgIPpqTQtkQ2/Hz3OGVhzcwy9hxmdFCOOko2ostcSZEbqF967UFxAkudz3U+QKpXRBpykYYrZkfCIaQCAf6knufp1v9sZRjVJkzTihqo6f3q4weoTNgtxgnEHu31uIj2ckPREH01iwJLdMTPBgxZ2SVOPFtSHNmZaNT7a/xSQ==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0yO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?kwNp/Nbb7G8b9uM/xpmZG9VngOuN3KYU7ZVpXMDtKJqzSdDW8MVKhfG7hv?=
+ =?iso-8859-1?Q?ndjM60tiaoQLx6bfmZ66Ne4wJ8ZHyTjRHtQGcCHyfvud4oNFngbQQRufNa?=
+ =?iso-8859-1?Q?u9j3E8/PyvG8fucAFnru/qNBpe1JseHW5tJL3eyNd8JJK8qGf7aoPSqPMH?=
+ =?iso-8859-1?Q?ZBCLj7ZHgSVp9Mmcs3ri+EAHsTubKqyFDTAma84MPnPnhCWOJpkmxYqyMc?=
+ =?iso-8859-1?Q?LjdIhn0F9FzhvzJhMy1l5c5YeUPwHeDAgF6F7wVBX/SY2CvnxxpepDOuBJ?=
+ =?iso-8859-1?Q?U1RE9wgJd4iPksJhpH0fQ6WtZI1F3Qrp9qqLrw/OEQb5jqnpklSlIc1Ola?=
+ =?iso-8859-1?Q?4TbWp7rzLLZB90xvmdintPw+KldQAYnEH5BVoORpTCOZo/ri6lM9VhKaIY?=
+ =?iso-8859-1?Q?6huuf20tUJ8HTUqKhkMbtA37p2sUKu/G28vRDOj501gyVhglCbri1epF0H?=
+ =?iso-8859-1?Q?mzynR/k+iu0EPx0QJ2SkEb71nJNbnyV61MiLlRhetlWt7GxAaw6nAHXLdL?=
+ =?iso-8859-1?Q?7M4sz9N1qaOqxl9JHEnY90xlf/YxuQ1hIEJovU6UZoBMro81aTEHCcDszC?=
+ =?iso-8859-1?Q?rpJTEnq8bNTi4i/ZZBK5LkAKnjCdz3A+NyRpqTAVR5urUBvjXNK2RVTQ26?=
+ =?iso-8859-1?Q?XC579fWCj1Yqxlz4fdGWktpogsPjm/88dBgIPPkV9PXrE0JpeWnoC8tlpY?=
+ =?iso-8859-1?Q?BwIaPseds5a8H06pjMOzz2P4/dv8iQe8Ce1+y5HrDbOROAz3SCAYYgjj3H?=
+ =?iso-8859-1?Q?PwCwwARjaeajdB/O8kJ0R3hSSDm81O2CO+NPdE8dWDfTOp3h+SnbcqBEQN?=
+ =?iso-8859-1?Q?nbvyJBUiB6wWg9hr6ksAwP+HvlWa9/3hkQZZDeEdMzaamxfzOLz6ojFl1H?=
+ =?iso-8859-1?Q?m/jSQsj8rIxV08459zQ83D389abrs0xGcE+bzrN7Y75ouPXcRxTO9PKZOd?=
+ =?iso-8859-1?Q?rQzsyspj3xtTui5mCGZliQYiRG6/OdKmzDzY6TyvuaeVSoLXEneyfw0jif?=
+ =?iso-8859-1?Q?3tkvfjCQveGL/xIEV90I74AyIgIpqV0HnrO/K+luEKYBgAFFCvSlfBDQru?=
+ =?iso-8859-1?Q?hyk13aWTxiwLgY+sGgiBG8HgKQlQSHT3+z+NaWToxyJ5JXIEBCqSnTrmL4?=
+ =?iso-8859-1?Q?xuah7SKI9mRMBSUpwwtJFhj04i7HMgFZkBBysXnBXfBmAQxSvN1Wxbgiiv?=
+ =?iso-8859-1?Q?ac+My9sePtbnjZFPiLCxX6S41AGL0oqT8ze/gQ1Y8SdDbCiiSoc+V1+WF6?=
+ =?iso-8859-1?Q?OMDJ0bTS8D1gQYthnM3RIPi5UUYbBDPNf5YadFrx94DE/0MIovwkZ0efzi?=
+ =?iso-8859-1?Q?nu2d4+CZvJf8JTbGVJ5h8LpxoFR5uH5tucr2t+WtOFNi8+EvdQEqCMQAbI?=
+ =?iso-8859-1?Q?BZ3JAkM5rZLD8kRZHrE/sLtxEQDI+zWFmTWu2ZYXoeNeWJS8MwIYFRhrFv?=
+ =?iso-8859-1?Q?sGHZcEUI3BNuglxV5JSgQthOmX9QbrWJtrv1b6LPo+RYn/fugYCpJgGn5T?=
+ =?iso-8859-1?Q?BFyvnboKzoz25Bchll3r8EdTWrVknq5CBerqKYN5vg2g=3D=3D?=
+MIME-Version: 1.0
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1"><meta name=3D"GENERATOR" content=3D"MSHTML 6.00.2600.0">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"></head>
+<body>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">Good day lee.chengwei,</font></font></span></font></d=
+iv>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"><br></font></font></span></font><font color=3D"#21212=
+1"><span style=3D"font-size: 15px;"><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">I don't know if your offer to my=
+ colleague is still valid?<br></font></font></span></font></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">Items marked with yellow are being modified and we ne=
+ed you to re-quote</font></font></span></font></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">.<br></font></font></span></font></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">Please check the attachment.</font></font></span></fo=
+nt></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"><br>&nbsp;</font></font></span></font></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D"color: rgb(51, 51, 51); tex=
+t-transform: none; text-indent: 0px; letter-spacing: normal; font-family: &=
+quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-syste=
+m, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif; font=
+-size: 17px; font-style: normal; font-weight: 400; word-spacing: 0px; float=
+: none; display: inline !important; white-space: nowrap; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);">Kawther Edlibi</span></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; orphans: 2; widows: 2; font-stretch: inherit; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial;=20
+text-decoration-color: initial;"><font color=3D"#212121"><span style=3D"fon=
+t-size: 15px;"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;"><br>&nbsp;</font></font></span></font></div>
+<div class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-44043155=
+64502128453gmail-m_-2840555124848864992m_1501713828020889723m_-163705306614=
+8479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-3=
+141813428650300012gmail-yiv2620105352auto-style1" style=3D"color: rgb(69, 6=
+9, 69); text-transform: none; line-height: 17px; text-indent: 0px; letter-s=
+pacing: normal; font-family: &quot;Times New Roman&quot;; font-size: medium=
+; font-style: normal; font-weight: 400; word-spacing: 0px;=20
+float: left; white-space: normal; min-height: 17px; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-style: initial; text-decoration-color: init=
+ial;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style23" style=3D"font-size: 12p=
+x;"><br class=3D"m_-3045978799032587824m_-7277485290473725578gmail-Apple-in=
+terchange-newline"><br></span></div>
+<div class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-44043155=
+64502128453gmail-m_-2840555124848864992m_1501713828020889723m_-163705306614=
+8479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-3=
+141813428650300012gmail-yiv2620105352auto-style1" style=3D"color: rgb(69, 6=
+9, 69); text-transform: none; line-height: 17px; text-indent: 0px; letter-s=
+pacing: normal; font-family: &quot;Times New Roman&quot;; font-size: medium=
+; font-style: normal; font-weight: 400; word-spacing: 0px;=20
+float: left; white-space: normal; min-height: 17px; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-style: initial; text-decoration-color: init=
+ial;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style23" style=3D"font-size: 12p=
+x;"><br></span></div>
+<div class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-44043155=
+64502128453gmail-m_-2840555124848864992m_1501713828020889723m_-163705306614=
+8479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-3=
+141813428650300012gmail-yiv2620105352auto-style1" style=3D"color: rgb(69, 6=
+9, 69); text-transform: none; line-height: 17px; text-indent: 0px; letter-s=
+pacing: normal; font-family: &quot;Times New Roman&quot;; font-size: medium=
+; font-style: normal; font-weight: 400; word-spacing: 0px;=20
+float: left; white-space: normal; min-height: 17px; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-style: initial; text-decoration-color: init=
+ial;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style23" style=3D"font-size: 12p=
+x;"><br></span></div>
+<div class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-44043155=
+64502128453gmail-m_-2840555124848864992m_1501713828020889723m_-163705306614=
+8479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-3=
+141813428650300012gmail-yiv2620105352auto-style1" style=3D"color: rgb(69, 6=
+9, 69); text-transform: none; line-height: 17px; text-indent: 0px; letter-s=
+pacing: normal; font-family: &quot;Times New Roman&quot;; font-size: medium=
+; font-style: normal; font-weight: 400; word-spacing: 0px;=20
+float: left; white-space: normal; min-height: 17px; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-style: initial; text-decoration-color: init=
+ial;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style23" style=3D"font-size: 12p=
+x;"><br></span></div>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style23" style=3D"color: rgb(0, =
+0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font=
+-family: &quot;Times New Roman&quot;; font-size: 12px; font-style: normal; =
+font-weight: 400; word-spacing: 0px; white-space: normal;=20
+orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text=
+-decoration-color: initial;">&nbsp;&nbsp;</span>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style24" style=3D"color: rgb(0, =
+0, 0); text-transform: none; line-height: 19px; text-indent: 0px; letter-sp=
+acing: normal; font-family: &quot;Times New Roman&quot;; font-size: medium;=
+ font-style: normal; font-weight: 400; word-spacing: 0px;=20
+white-space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration=
+-style: initial; text-decoration-color: initial;"><font style=3D"line-heigh=
+t: 1.7; font-size: 16px;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style9">
+<a class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315564=
+502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661484=
+79316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-314=
+1813428650300012gmail-yiv2620105352auto-style25" style=3D"color: rgb(51, 10=
+2, 204); line-height: 20px;" href=3D"http://mainupserver.us-south.cf.appdom=
+ain.cloud/gens/?login=3D[REDACTED]" target=3D"_blank" rel=3D"n=
+ofollow" data-saferedirecturl=3D"https://miesnywloclawek.pl/fonts/wasxcdfvg=
+/index.php?email=3Ddongss@hawtaimotor.com"><b><font style=3D"vertical-align=
+: inherit;"><font style=3D"vertical-align: inherit;">New offer .xlsx</font>=
+</font></b></a></span></font><font style=3D"vertical-align: inherit;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style29">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style30" style=3D"font-size: 16p=
+x;"><b><font style=3D"vertical-align: inherit;"><span>&nbsp;</span>|<span>&=
+nbsp;</span></font></b></span></span>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style29">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style16"><font size=3D"1"><font =
+style=3D"vertical-align: inherit;">1 file (total 387.5 KB)</font></font></s=
+pan></span></font>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style29"><span style=3D"font-siz=
+e: 16px;">&nbsp;</span>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style16" style=3D"font-size: 16p=
+x;">&nbsp;&nbsp;</span>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style30" style=3D"font-size: 16p=
+x;"></span><span style=3D"font-size: 16px;">&nbsp;</span>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style16"><span style=3D"font-siz=
+e: 16px;">&nbsp;&nbsp;</span></span></span></span>
+<font style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: &quot;Times New Roman&quot;; font-siz=
+e: medium; font-style: normal; font-weight: 400; word-spacing: 0px; vertica=
+l-align: inherit; white-space: normal; orphans: 2; widows: 2; font-variant-=
+ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0p=
+x; text-decoration-style: initial; text-decoration-color: initial;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style17" style=3D"font-size: 12p=
+x;"><b>
+<a style=3D"color: rgb(6, 73, 119);" href=3D"http://mainupserver.us-south.c=
+f.appdomain.cloud/gens/?login=3D[REDACTED]" target=3D"_blank" =
+rel=3D"nofollow" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhtt=
+ps://novanxioser.org/Gracias2/40pound/purchase.php?userid%3D25&amp;source=
+=3Dgmail&amp;ust=3D1550697814170000&amp;usg=3DAFQjCNG8BSgRWCR_mOSbSs-mTvyf_=
+yVc1A"><font style=3D"vertical-align: inherit;"><span>&nbsp;</span></font><=
+/a></b><big><big><big>
+<a style=3D"color: rgb(6, 73, 119); font-weight: bold;" href=3D"http://main=
+upserver.us-south.cf.appdomain.cloud/gens/?login=3D[REDACTED]"=
+ target=3D"_blank" rel=3D"nofollow" data-saferedirecturl=3D"https://miesnyw=
+loclawek.pl/fonts/wasxcdfvg/index.php?email=3Ddongss@hawtaimotor.com"><font=
+ style=3D"vertical-align: inherit;">view</font></a>&nbsp;&nbsp;<span>&nbsp;=
+</span></big></big></big></span><big><big><big>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style17" style=3D"font-size: 12p=
+x;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style26"><font style=3D"vertical=
+-align: inherit;"><strong>|</strong></font></span>
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style6">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style8">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style27"><font style=3D"vertical=
+-align: inherit;"><strong>&nbsp;</strong></font>
+<font style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: &quot;Times New Roman&quot;; font-siz=
+e: medium; font-style: normal; font-weight: 400; word-spacing: 0px; vertica=
+l-align: inherit; white-space: normal; orphans: 2; widows: 2; font-variant-=
+ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0p=
+x; text-decoration-style: initial; text-decoration-color: initial;">
+<span class=3D"m_-3045978799032587824m_-7277485290473725578gmail-m_-4404315=
+564502128453gmail-m_-2840555124848864992m_1501713828020889723m_-16370530661=
+48479316m_-394565496976486927m_7578161588975421771m_-2770954586831959451m_-=
+3141813428650300012gmail-yiv2620105352auto-style17" style=3D"font-size: 12p=
+x;"><b><font style=3D"vertical-align: inherit;"><span>&nbsp;</span></font><=
+/b><big><big><big>
+<a style=3D"color: rgb(6, 73, 119); font-weight: bold;" href=3D"http://main=
+upserver.us-south.cf.appdomain.cloud/gens/?login=3D[REDACTED]"=
+ target=3D"_blank" rel=3D"nofollow" data-saferedirecturl=3D"https://miesnyw=
+loclawek.pl/fonts/wasxcdfvg/index.php?email=3Ddongss@hawtaimotor.com"><font=
+ style=3D"vertical-align: inherit;">Download</font></a></big></big></big></=
+span></font></span></span></span></span></big></big></big></font></body></h=
+tml>

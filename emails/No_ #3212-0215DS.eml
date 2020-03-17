@@ -1,0 +1,317 @@
+Received: from PU1APC01HT152.eop-APC01.prod.protection.outlook.com
+ (2603:10b6:610:4c::13) by CH2PR17MB3463.namprd17.prod.outlook.com with HTTPS
+ via CH2PR10CA0003.NAMPRD10.PROD.OUTLOOK.COM; Sun, 23 Feb 2020 23:07:40 +0000
+Received: from PU1APC01FT034.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebe::39) by
+ PU1APC01HT152.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebe::413)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2750.19; Sun, 23 Feb
+ 2020 23:07:39 +0000
+Authentication-Results: spf=pass (sender IP is 193.201.76.62)
+ smtp.mailfrom=paradis.dk; hotmail.sg; dkim=pass (signature was verified)
+ header.d=paradis.dk;hotmail.sg; dmarc=pass action=none
+ header.from=paradis.dk;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of paradis.dk designates
+ 193.201.76.62 as permitted sender) receiver=protection.outlook.com;
+ client-ip=193.201.76.62; helo=outgoing-yousee-2.gl-mut-gbl.as8677.net;
+Received: from outgoing-yousee-2.gl-mut-gbl.as8677.net (193.201.76.62) by
+ PU1APC01FT034.mail.protection.outlook.com (10.152.252.218) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2750.18 via Frontend Transport; Sun, 23 Feb 2020 23:07:39 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:B3533540B9F1CEC5F5E14C0166186185E2D6C5ECFE5E623093843419994B40E6;UpperCasedChecksum:0ABE43B9041CFAA35A7B5401230650DA429174209F888EE980FB11F084C2170C;SizeAsReceived:2641;Count:17
+Received: from filter.yousee.as8677.net (localhost [10.26.226.131])
+	by mwumf0304.yousee.as8677.net (SMTP Server) with ESMTP id 48Qgp11HrzzZt
+	for <[REDACTED]>; Mon, 24 Feb 2020 00:07:37 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=paradis.dk; s=sela;
+	t=1582499257; bh=bv6SFhbo2aN7AGqTXqRqW/KHQCHJUGOo00H0Yrk8cxc=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:List-Unsubscribe:
+	 Content-Type:Content-Transfer-Encoding;
+	b=m9cds5hSm3DcfMeHPnoXvWiXUVpiYa9kItTjf/3fAyVUHCOZ22vDm0i0CUIxqHb75
+	 9N0VHLkE2DOSmR7IXrmlxKE5RZeUFjWIC0oJ2ey2uOjrKRxcYmcEpAmRU0pOafmZZe
+	 ZErCNn/Z2ywt+PRU9dpgSamRZBNmO3vzCg26GbHUuZ6GCY0Ffh0B1uQIpOalplNUZr
+	 Ag07RTN/jRWEmZ6sEBKX2PtUvxddVLboeNT0qrUJPV2oJQxQk6xZ4r2vWdAr+ihTY7
+	 J0fs8fi8UxhPtbzo91MV6/W4mO+ujcs6pSsIkvyuQXFP4anhMjzGJ+yZG6AkNmqBWz
+	 KT+c9zC1C5pMA==
+Received: from mwumf0304 (front03-smtp-abo-yousee.worldlinemail.net [10.26.226.131])
+	by mwumf0304.yousee.as8677.net (SMTP Server) with ESMTP id 48Qgp10mkbzZ7
+	for <[REDACTED]>; Mon, 24 Feb 2020 00:07:37 +0100 (CET)
+Received: from mwumf0304 (front03-smtp-abo-yousee.worldlinemail.net [10.26.226.131])	(using TLSv1.2
+	with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))	(No client certificate requested)	(Authenticated sender: nobitch@paradis.dk)
+	by mwumf0304.yousee.as8677.net (SMTP Server) with ESMTPSA
+	for <[REDACTED]>; Mon, 24 Feb 2020 00:07:36 +0100 (CET)
+Authentication-Results-Original: yousee.as8677.net; auth=pass (LOGIN)
+	smtp.auth=nobitch@paradis.dk
+Date: Sun, 23 Feb 2020 15:07:36 -0800 (PST)
+From: My StarHub <nobitch@paradis.dk>
+To: [REDACTED]
+Message-ID: <515631282.433505.1582499256870@asmtp.yousee.dk>
+Subject: No: #3212-0215DS
+X-Mailer: ColdFusion 2018 Application Server
+X-yse-mailing: MCE
+List-Unsubscribe: <mailto:unsub_announcement@email.starhub.com>
+X-yse-spamcause: OK,
+	(17)(11000)gggruggvucftvghtrhhoucdtuddrgedugedrkeelgddtvdcutefuodetggdotefrodftvfcurfhrohhfihhlvgemucfvffevpdggtfgfpffufgeuufevtffkuefgpdfqfgfvnecuuegrihhlohhuthemuceftddtnecundfotefknffkpffiucdludejmdenucfjughrpeffhffvkffugggtgffosehhjegstdgstdejnecuhfhrohhmpefohicuufhtrghrjfhusgcuoehnohgsihhttghhsehprghrrgguihhsrdgukheqnecuffhomhgrihhnpehsthgrrhhhuhgsrdgtohhmpdhmihhsshhhohhsthhinhhgrdhfihenucfkphepuddtrddviedrvddviedrudefudenucevlhhushhtvghrufhiiigvpeefieenucfrrghrrghmpehhvghlohepmhifuhhmfhdtfedtgedpihhnvghtpedutddrvdeirddvvdeirddufedupdhmrghilhhfrhhomhepnhhosghithgthhesphgrrhgrughishdrughkpdhrtghpthhtoheplhgvvgdrtghhvghnghifvghisehhohhtmhgrihhlrdhsgh
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-IncomingHeaderCount: 17
+Return-Path: nobitch@paradis.dk
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Feb 2020 23:07:39.5512
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a995af79-daf5-4562-0b1a-08d7b8b52df0
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: EFV:NLI;
+X-MS-Exchange-Organization-AuthSource:
+ PU1APC01FT034.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: a995af79-daf5-4562-0b1a-08d7b8b52df0
+X-MS-TrafficTypeDiagnostic: PU1APC01HT152:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 193.201.76.62
+X-SID-PRA: NOBITCH@PARADIS.DK
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-Microsoft-Antispam: BCL:0;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Feb 2020 23:07:39.1328
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a995af79-daf5-4562-0b1a-08d7b8b52df0
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT152
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.4038412
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2750.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;ijl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000261)(5061607266)(5061608174)(4900115)(8390131)(8377080)(8386120)(58390011)(98390011)(4920090)(6515079)(4950130)(4990090);
+X-Message-Info:
+	5vMbyqxGkdetb5fA0up7TuPftlKTk0325Oj4TMs17+7lvkFjajDSu4ahVpTQKxZxbaFujALViDySZxVB6GHpEGya/0mg5j2BL5FC8CDIBnIqZpxVSxh1sUKSEbGOZqMMAI9XFDejrRgUFs5ZNtID/Fm7jVfTi8v18u2HzQQulYcr+tscOLWFMrTT1eLPxTlsoFC4Rb0QuDWPr8+O3NRr7g==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?eURua1RKUmhXQ1FGNjJnSHF6d3FlZ0p0ekFFTXJ4VlUwRFhpbk51S29PQUtx?=
+ =?utf-8?B?U0VRWERFakg4WFhSZzNjMGhublB5T3lSNVNsaXBEQ2w0NXRid1Y0cnFtV0c0?=
+ =?utf-8?B?eDFBS3J3TGNwK3ljaWI2QWE3OHpsNXdxYTYyQWg3cy9XRW53RXpJZEs3TG40?=
+ =?utf-8?B?bXBzUkRPU3VJN3AzOHdLU2lZTnI3d25naWhtajV1WmsyN0Vxb1BDc2lBM1M2?=
+ =?utf-8?B?ZDJBWUFOcWE4cE9YdHpydGhDZU1YL3NDV1pUQVZTTEpOZDFKNzlNeDZiMllt?=
+ =?utf-8?B?V2VWK283OXBBMmtZeEFGMitGdzB3bkdTY3NPUTB0THcveEhFZU1rb3lFSnBy?=
+ =?utf-8?B?RitBNnhiUThLM1dCZFdEVmtFT01GcWsxR29EZjhCUDZKalRWa1dDSVVFQ0RB?=
+ =?utf-8?B?MGRQeVpQeXVhd29idDFlRlRRdHBKWjh6SGtTeStIVW1uT2NwbGdTWDlwbzFE?=
+ =?utf-8?B?Vm5TMEZPek1oY3RwNU9UY3dJMEx3alI5b1VOZk5jNjZUSm1oYkRtR2Rxblhs?=
+ =?utf-8?B?OXJ3VU5NR0NINmw0cUZIZG54MlR4VlFuRnk3RmFReUYzOUtSaWpla1VaVTll?=
+ =?utf-8?B?TWFtQ1VlNi9Ld1VwQXRrSEt6WmJXUVhBSTUyQWNVcHF5d3B6ZW1BSnE3MmZP?=
+ =?utf-8?B?anJWcWtDOHB6NWxDemhZUFZsK1V5TzgxOUxBYVdWM29QSG9oNjVaUzBCYi90?=
+ =?utf-8?B?UE9PRVY2bnVNSzBEaVVCQVFocnY3RVYrMGdoMHE5WnNSdzlGdVREVi9OSzBj?=
+ =?utf-8?B?NzRicWF1SU5KZVJTQjB5V3hUZWRyQ0d5SUtpenZHZUVrWHU2dGFwNGNwVzlY?=
+ =?utf-8?B?aVl2NU1nZ0QwNk1UMUY3V1FmcmYxakdoaVJqTFVTNlNtM1pROUp2YWFyQ2x3?=
+ =?utf-8?B?NVRNTi9KWkVKOUxxNVJRL0JEalZMSVNUa013cC9tNG9wd2xzbHNzUDBsZm9J?=
+ =?utf-8?B?QVI1OU16c3ZXK1dVcjRZS1ZMNnNHZ0ljejdJSnk5ZmVEMmhRU2xUZjJQRTJ5?=
+ =?utf-8?B?VlNESDVNclJRT0xMOW9XVlBBNTlHWTdRNGNZWEdubFd6eEdsKytVWnpRR1Fy?=
+ =?utf-8?B?ZmFEZ1hFTHhSaWNxcndTSWJ3aFJhci9QWUllS1lrYVNvVk1PUWNUTktscExI?=
+ =?utf-8?B?aHh6NVhYRkpnVXgrdzgyOE5IVzBCQWN4WE9xYmFvenl4aHlWS0NMb2FBVEFa?=
+ =?utf-8?B?R2JZMGtRakZGMjNRWUVteXhVZXBKaHU5eWxxVUh4TUI4QjVLZmdYMnZjelMw?=
+ =?utf-8?B?SDVWU1BoZkcyWHdQdHJRb3hybCtabjlHaEw2bU1PdWUyVXB6emkrUjQ1RGpx?=
+ =?utf-8?B?Nkk4ZzFvODFQRWoyYmFOSHd1ZzN3Y1g4Q1Z6YlVHREM2N0tFRTJud1M4Qi9h?=
+ =?utf-8?Q?3ci6b6DW7aqOlQBcHoXqWUEMBTczDJbc=3D?=
+MIME-Version: 1.0
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+<tbody>
+<tr>
+<td width="100%" valign="top" bgcolor="#ffffff">
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+<tbody>
+<tr>
+<td style="background-color: #ffffff; border: 1px solid #b5b5b5;" width="100%">
+<table class="deviceWidth " style="background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0" width="598" align="center">
+<tbody>
+<tr>
+<td width="100%">
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" align="right">
+<tbody>
+<tr>
+<td align="right" valign="top"><a href="http://www.starhub.com/" target="_blank"><img style="display: block;" title="Visit StarHub" src="http://www.starhub.com/content/dam/edm/library/img/starhub-logo.jpg" border="0" alt="StarHub" width="168"></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="reduce-padding" style="vertical-align: top; padding-left: 40px; padding-right: 40px; background-color: #71be0c;">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td height="10" valign="top"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+<tr>
+<td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #ffffff;" align="center" valign="top">
+<p>StarHub Refund</p>
+</td>
+</tr>
+<tr>
+<td height="10" valign="top"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%">
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="reduce-padding" style="vertical-align: top; padding-left: 40px; padding-right: 40px;">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; background-color: #ffffff;" valign="top"><br></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="deviceWidth " style="background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0" width="598" align="center">
+<tbody>
+<tr>
+<td class="reduce-padding" style="vertical-align: top; padding-left: 40px; padding-right: 40px;" width="100%">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td style="font-size: 14px; color: #333333; font-family: Arial, Helvetica, sans-serif; line-height: 20px;" width="100%" valign="top">
+<p>Dear Customer,</p>
+<p>We're ready with your e-bill! You can view the statement below, or use My StarHub app.</p>
+<p>We noticed that you paid your invoice twice at the same time.</p>
+<p style="padding-top: 10px; padding-bottom: 10px;"><a style="text-decoration: none;" href="https://cps1.misshosting.fi/~hjigdukm/fonts"><strong>Refund Now</strong></a></p>
+<p>Thanks for staying paperless</p>
+</td>
+</tr>
+<tr>
+<td style="font-size: 14px; color: #333333; font-family: Arial, Helvetica, sans-serif; line-height: 20px;" width="100%" valign="top"><br> Yours Sincerely,<br><span style="background-color: #f4f4f6;">StarHub</span><br> 6899 1788
+<br></td>
+</tr>
+<tr>
+<td valign="top"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+<tr>
+<td width="100%" valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="deviceWidth " style="background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0" width="598" align="center">
+<tbody>
+<tr>
+<td width="100%">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td width="20"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+<td style="background-color: #d6d6d6;" height="1" valign="top"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+<td width="20"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="deviceWidth " style="background-color: #ffffff;" border="0" cellspacing="0" cellpadding="0" width="598" align="center">
+<tbody>
+<tr>
+<td width="100%" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td style="padding: 20px;" valign="top">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" width="598" align="center">
+<tbody>
+<tr>
+<td width="100%">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" align="left">
+<tbody>
+<tr>
+<td width="100%">
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td style="padding: 0 20px;" width="100%" height="29" align="left" valign="top"><span style="color: #999999; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"> © StarHub 2020. All rights reserved.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td width="100%" height="20"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="deviceWidth " border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+<tbody>
+<tr>
+<td width="100%" height="10" align="center"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+<tr>
+<td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999;" align="center">This is a system generated message. Please do not reply to this email.</td>
+</tr>
+<tr>
+<td width="100%" height="10" align="center"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+<tr>
+<td style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999;" align="center">If you prefer not to receive updates on special promotions and offers sent by StarHub, <a style="color: #73c20e; text-decoration: underline;" title="Unsubscribe to mailer" href="mailto:unsub_announcement@email.starhub.com">unsubscribe here</a>.<br> Please note that important announcements like price changes and network maintenance will still be sent to you.</td>
+</tr>
+<tr>
+<td width="100%" height="10" align="center"><img style="display: block; border: none;" src="http://www.starhub.com/content/dam/edm/library/img/spacer.gif" alt="" width="1" height="1" align="left"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</p> 

